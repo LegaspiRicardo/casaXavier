@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(50, 50, 50);
+    color: #EBCF33;
+    font-family: Great Vibes;
+}
+
+ .img-portada{
+    width: 100%;
+    position: inherit;
+    top: -20;
+    
+}
+
+.primera-seccion{
+    background-color:rgb(40, 84, 114) ;
+    z-index: 1;
+}
+
+.segunda-seccion{
+    background-color: rgb(50, 50, 50);
+}
+
+h1{
+    text-align: center;
+    border-bottom: solid rgb(50, 50, 50);
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(50, 50, 50, 0.692);
+}
+
+.navbar-titulo{
+    color: #EBCF33;
+    font-size: 40px;
+}
+
+.nav-link{
+    color: #ffe869;
+    font-size: 20px;
+}
+
+.nav-link:hover, .navbar-titulo:hover{
+    background-color: #897a2a;
+    color: white;
+    border-radius: 5%;
+    text-decoration: none;
+}
