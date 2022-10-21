@@ -84,7 +84,7 @@ p{
 }
 
 .imagen-fondo{
-    max-height: 550px;
+    max-height: 650px;
     width: 100%;
     margin: 0 0 8% 0;
 }
@@ -150,11 +150,15 @@ footer{
     font-size: 25px;
 }
 
-
+.img-portada{
+    max-height: 600px;
+}
 
 h1{
     font-size: 40px;
 }
 
-
+p{
+    font-size: 20px;
+}
 }
