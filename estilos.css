@@ -6,7 +6,6 @@
 body{
     background-color: rgb(50, 50, 50);
     color: #EBCF33;
-
 }
 
  .img-portada{
@@ -132,4 +131,8 @@ opacity: 0.7;
 .form-btn:hover{
     background-color:#EBCF33 ;
     color:  rgb(13, 13, 13);
+}
+
+footer{
+    background-color: red;
 }
