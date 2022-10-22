@@ -17,11 +17,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-titulo ml-3 pl-2 pr-2" href="#">Casa Xavier</a>
 
-        <div class="collapse navbar-collapse col-4 ml-auto" id="navbarNav">
-          <ul class="navbar-nav col-12 mx-auto">
+  <!--------------------------Navbar------------------------------------------>
+    <nav class="navbar navbar-expand-lg col-12 m-0 p-0 pt-3 pb-3">
+        <a class="navbar-titulo col-6" href="#">Casa Xavier</a>
+        <div class="collapse navbar-collapse col-9 ml-auto pr-0" id="navbarNav">
+          <ul class="navbar-nav col-5 mx-auto">
             <li class="nav-item active">
               <a class="nav-link mr-4" href="#">Productos <span class="sr-only">(current)</span></a>
             </li>
@@ -37,39 +38,193 @@
           </ul>
         </div>
       </nav>
+      
     <header class="col-12 p-0">
-        <div class="col-12 w-100 p-0 imagen-por d-inline">
-            <img src="imagenes/plumas1-1.jpg" class="col-12 p-0 img-portada" alt="">
+        <div class="col-12 w-100 p-0 imagen-por ">
+            <img src="imagenes/plumas1-1.jpg" class="col-12 p-0 img-portada d-none d-sm-block" alt="">
+            <img src="imagenes/plumas1-2.jpg" class="col-12 p-0 img-portada d-sm-none" alt="">
         </div>
     </header>
+
 
     <div class="primera-seccion row pt-4 pb-4">
         <div class="col-8 mx-auto pt-3">
             <h1 class="col-8 mx-auto">Escribe bien, escribe Xavier</h1>
+
+
+    <div class="primera-seccion col-12 pt-5 pb-5">
+        <div class="col-10 mx-auto pt-3">
+            <h1 class="col-10 mx-auto">Escribe bien, escribe Xavier</h1>
+
         </div>
+    </div>
+
+    <!--------------------------Segunda Seccion------------------------------------------>
+    <!----------------------------------------------Hide on smaller screens------------------------------------------>
+    <div class="segunda-seccion col-12 pt-5 mb-5 mx-auto container d-none d-sm-block">
+      <div class="row mb-5">
         <div class="col-6 mx-auto">
+          <img src="Imagenes/portada.jpg" class="col-10 ml-5 imagenes" alt="">
+        </div>
+  
+        <div class="col-6  mx-auto mt-5">
+          <h2 class="col-8 mx-auto mt-5">Plumas fuente y estilografos</h2>
           <p class="col-8 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
         </div>
+      </div>
+
+      <div class="row pt-3">
+          <div class="col-6  mx-auto mt-5">
+            <h2 class="col-8 mx-auto mt-5">Reparación y mantenimiento</h2>
+            <p class="col-8 mx-auto">Piezas originales para tus plumas y estilografos</p>
+          </div>
+
+          <div class="col-6 mx-auto">
+            <img src="Imagenes/piezas.jpg" class="col-11 mx-auto imagenes" alt="">
+          </div>
+      </div>
     </div>
 
-    <div class="segunda-seccion row pt-5 mb-5">
-      <div class="col-6 d-inline mx-auto mt-5">
-        <h2 class="col-8 mx-auto mt-5">Reparación y mantenimiento</h2>
-        <p class="col-8 mx-auto">Piezas originales para tus plumas y estilografos</p>
+    <!-----------------------------------------------Hide on bigger screens------------------------------------------>
+    <div class="segunda-seccion col-12 pt-5 mb-5 mx-auto container d-sm-none">
+      <div class="row mb-5">
+        <div class="col-10 mx-auto">
+          <img src="Imagenes/portada.jpg" class="col-12 imagenes" alt="">
+        </div>
+  
+        <div class="col-12  mx-auto  mb-3">
+          <h2 class="col-12 mx-auto mt-5">Plumas fuente y estilografos</h2>
+          <p class="col-12 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
+        </div>
       </div>
 
-      <div class="col-6 mx-auto">
-        <img src="Imagenes/piezas.jpg" class="col-10 ml-5 " alt="">
+      <div class="row pt-3">
+        
+        <div class="col-10 mx-auto">
+          <img src="Imagenes/piezas.jpg" class="col-11 mx-auto imagenes" alt="">
+        </div>
+          <div class="col-12  mx-auto ">
+            <h2 class="col-12 mx-auto mt-5">Reparación y mantenimiento</h2>
+            <p class="col-12 mx-auto">Piezas originales para tus plumas y estilografos</p>
+          </div>
+
       </div>
     </div>
 
-    <div class="primera-seccion col-12 pt-4 pb-4">
-      <div class="col-8 mx-auto pt-3">
-          <h1 class="col-8 mx-auto">Escribe bien, escribe Xavier</h1>
+
+
+    <!--------------------------Frase e imagen de fondo------------------------------------------>
+    <!---------------------------------------------Hide on smaller screens------------------------------------------>
+    <div class="imagen-fondo col-12 m-0 p-0  d-none d-sm-block ">
+      <img src="imagenes/escribiendo1.jpg" class="bg-img " alt="">
+      <div class="col-12 pb-5">
+        <div class="col-4 mt-5 pt-5 ml-auto">
+          <div class="col-12 ml-auto text-center ">
+            <h3 class=" pt-5 mt-5 ">Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto. Es un hábito.</h3>
+            <p class="text-faded">-Aristoteles-</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 mx-auto">
-        <p class="col-8 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
+    </div>
+    <!---------------------------------------------Hide on bigger screens------------------------------------------>
+    <div class="imagen-fondo col-12 m-0 p-0 d-sm-none">
+      <img src="imagenes/escribiendo1-1.jpg" class="bg-img  " alt="">
+      <div class="col-12 pb-5">
+        <div class="col-10 mt-5 pt-5 mx-auto ">
+          <div class="col-12 mx-auto text-center ">
+            <h3 class=" mt-5">Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto. Es un hábito.</h3>
+            <p class="text-faded">-Aristoteles-</p>
+          </div>
+        </div>
       </div>
+    </div>
+
+
+
+    <!--------------------------Frase e imagen de fondo------------------------------------------>
+    <div class="row segunda-seccion pb-5 mb-3 mt-5">
+      <h2 class="col-10  mx-auto mt-3 ">Ven y conocenos</h2>
+      <!---------------------------------------------Hide on smaller screens------------------------------------------>
+      <div class="container d-none d-sm-block">
+        <div class="row">
+          <div class="col mx-auto">
+            <p class="col-10 mx-auto mb-3">Juan Manuel 487, Zona Centro, 44100 Guadalajara, Jalisco.</p>
+          </div>
+          <div class="col-12 mx-auto mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4439.014224469872!2d-103.3452423250005!3d20.679700854186233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1e515f4a3eb%3A0x5ca2f1e43aa729f8!2sCASA%20XAVIER!5e0!3m2!1ses!2smx!4v1666321843352!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" class="col-12 mx-auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------Hide on bigger screens------------------------------------------>
+      <div class="col-12 d-sm-none">
+        <div class=" mx-auto mapa"> 
+          <p class="col-10 mx-auto mb-3">Juan Manuel 487, Zona Centro, 44100 Guadalajara, Jalisco.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4439.014224469872!2d-103.3452423250005!3d20.679700854186233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1e515f4a3eb%3A0x5ca2f1e43aa729f8!2sCASA%20XAVIER!5e0!3m2!1ses!2smx!4v1666321843352!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" class="col-12 mx-auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="primera-seccion row pt-5 pb-3">
+      <h2 class="col-10 mx-auto">Nuestros Colaboradores</h2>
+          <p class="col-3 mx-auto pt-4 logo-empresas"><img src="imagenes/Waterman-logo.png" class="empresas mt-3" alt=""></h1>
+          <p class="col-3 mx-auto pt-4 logo-empresas"><img src="imagenes/sheaffer-logo.png" class="empresas col-3 mx-auto" alt=""></p>
+          <p class="col-3 mx-auto pt-4 logo-empresas"><img src="imagenes/Cross-logo.png" class="empresas" alt=""></p>
+          <p class="col-3 mx-auto pt-4 logo-empresas"><img src="imagenes/Parker-logo.png" class="empresas" alt=""></h1>
+      </div>
+
+
+    <!--------------------------Contactanos------------------------------------------>
+    <!---------------------------------------------Hide on smaller screens------------------------------------------>
+    <div class="segunda-seccion row pt-5 pb-4 d-none d-sm-block">
+      <div class="col-4 d-inline">
+        <img src="imagenes/pluma3.jpg" class="col-12 imagen-contacto" alt="">
+      </div>
+      <div class="col-7 mx-auto">
+          <div class="contacto ">
+            <h2 >Contactanos  </h2>
+            <div class="col-10 mx-auto pt-2 ">
+              <form method="POST" class="formulario mx-auto">
+                <label for="correo" class="col-12 mb-0 mt-2">Correo:</label>
+                <input type="mail" name="correo" class="col-10 form-input ml-5">
+    
+                <label for="telefono" class="col-12 mb-0 mt-2">Telefono:</label>
+                <input type="text" name="telefono" class="col-10 form-input ml-5">
+    
+                <label for="mensaje" class="col-12 mb-0 mt-2">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-10 ml-5 form-input"></textarea>
+    
+                <input type="submit" value="Enviar" class="col-3 mt-3 form-btn ">
+              </form>
+            </div>
+          </div> 
+      </div>
+    </div>
+    <!---------------------------------------------Hide on bigger screens------------------------------------------>
+   
+    <div class="segunda-seccion row pt-4 pb-4 d-sm-none ">
+      <img src="imagenes/pluma3.jpg" class="col-10 mx-auto imagen-contacto" alt="">
+      <div class="col-10 mx-auto">
+          <div class="contacto ">
+            <h2 class="pt-3 mb-0">Contactanos  </h2>
+            <div class="col-12 mx-auto pt-2 ">
+              <form method="POST" class="formulario mx-auto">
+                <label for="correo" class="col-12 mb-0 mt-2">Correo:</label>
+                <input type="mail" name="correo" class="col-12 form-input">
+    
+                <label for="telefono" class="col-12 mb-0 mt-2">Telefono:</label>
+                <input type="text" name="telefono" class="col-12 form-input">
+    
+                <label for="mensaje" class="col-12 mb-0 mt-2">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-input"></textarea>
+    
+                <input type="submit" value="Enviar" class="col-3 mt-3 form-btn ">
+              </form>
+            </div>
+          </div> 
+      </div>
+
   </div>
 
   <section class="imagen-fondo row">
@@ -88,5 +243,17 @@
     </div>
   </section>
 
+    </div>
+
+
+
+    <footer class="row">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex saepe earum quod. Error iusto fuga officiis assumenda, molestiae eos commodi quia, labore minus laborum nihil autem repellendus quibusdam voluptate eaque, hic enim. Dicta eum commodi repellendus exercitationem ipsum mollitia perferendis dolorem natus odit asperiores? Laboriosam, sunt quaerat aliquid dicta sint iusto officiis at similique, quos adipisci itaque? Sed provident officia aliquam blanditiis similique, reiciendis suscipit deserunt quod praesentium aperiam impedit incidunt nobis id. Repellendus voluptates blanditiis, doloribus sed id aut tempora ab iure natus vel nostrum minima, quisquam suscipit distinctio ducimus assumenda at magni facilis harum quasi repellat soluta dolores?</p>
+
+    </footer>
+
+
 </body>
 </html>
+
+
