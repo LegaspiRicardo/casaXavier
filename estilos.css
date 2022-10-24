@@ -37,6 +37,9 @@ h2{
     font-family: Great Vibes;
     text-align: center;
     font-size:50px ;
+}
+
+.borde-solido-amarillo{
     border-bottom: solid #8b845d;
 }
 
@@ -106,6 +109,11 @@ p{
     border-radius: 5%;
     max-height: 400px;
     margin-left: 4%;
+}
+
+.imagenes-productos{
+    border-radius: 5%;
+    max-height: 350px;
 }
 
 .empresas{
