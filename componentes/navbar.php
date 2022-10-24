@@ -6,13 +6,13 @@
               <a class="nav-link mr-4" href="productos.php">Productos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-4" href="#">Servicios</a>
+                <a class="nav-link mr-4" href="servicios.php">Servicios</a>
               </li>
             <li class="nav-item">
               <a class="nav-link mr-4" href="ubicacion.php">Ubicación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mr-4" href="#">Contacto</a>
+              <a class="nav-link mr-4" href="contacto.php">Contacto</a>
             </li>
           </ul>
         </div>

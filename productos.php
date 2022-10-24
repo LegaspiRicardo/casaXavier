@@ -57,7 +57,7 @@
                 <img src="imagenes/tinta.jpg" class="imagenes-productos col-12 mx-auto" alt="">
             </div>
             <div class="col-5 mx-auto mt-4">
-                <p class="texto-alineado-vertical">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores, rem, distinctio tempore, consequatur accusantium rerum velit eveniet error aliquam repudiandae perferendis voluptate dolore corporis eius accusamus placeat reiciendis totam?</p>
+                <h3 class="texto-alineado-vertical pt-5">Contamos con tinta para pluma fuente de colores y precios variados.</h3>
 
             </div>
         </div>

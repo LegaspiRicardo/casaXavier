@@ -165,7 +165,7 @@
       <div class="col-8 d-inline mx-auto">
         <h2 class="borde-solido-amarillo col-10 mx-auto">Contactanos  </h2>
         <div class="col-8 mx-auto pt-2">
-          <form method="POST" class="formulario  ml-5">
+          <form method="POST" class=" ml-5">
                 <label for="correo" class="col-12 mb-0 mt-2">Correo:</label>
                 <input type="mail" name="correo" class="col-10 form-input">
     

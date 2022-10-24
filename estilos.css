@@ -9,7 +9,7 @@ body{
     width: 100%;
 }
 
- .img-portada{
+.img-portada{
     width: 100%;
     position: relative;
     max-height: 800px;
@@ -128,7 +128,9 @@ p{
 opacity: 0.7;
 }
 
-
+.formulario-contactanos{
+    margin-top: 5%;
+}
 
 .form-input{
     background-color: rgba(74, 74, 74, 0.692);
@@ -139,7 +141,7 @@ opacity: 0.7;
     background-color: rgba(74, 74, 74, 0.692) ;
     color: #EBCF33;
     border-radius: 10%;
-    margin-left: 40%;
+    margin-left: 25%;
 }
 
 .form-btn:hover{
@@ -157,7 +159,9 @@ footer{
     max-height: 40px;
 }
 
-
+.imagen-senor{
+    margin-left: 20%;
+}
 
 @media only screen and (max-width:500px){
 

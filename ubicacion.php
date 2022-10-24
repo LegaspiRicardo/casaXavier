@@ -32,18 +32,71 @@
           <div class="col-12 mx-auto mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4439.014224469872!2d-103.3452423250005!3d20.679700854186233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1e515f4a3eb%3A0x5ca2f1e43aa729f8!2sCASA%20XAVIER!5e0!3m2!1ses!2smx!4v1666321843352!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" class="col-12 mx-auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <!--------Carrusel----------------------->
+          <div id="carouselExampleInterval" class="carousel slide col-8 mx-auto" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="10000">
+                <img src="imagenes/casaXavier.png" alt="" class="col-10 ml-5 mt-4">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="imagenes/vitrina1.jpg" alt="" class="col-10 ml-5 mt-4">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/vitrina2.jpg" alt="" class="col-10 ml-5 mt-4">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/vitrina3.jpg" alt="" class="col-10 ml-5 mt-4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
         </div>
       </div>
       <!-------Hide on bigger screens------------------------>
-      <div class="col-12 d-sm-none">
+      <div class="col-10 d-sm-none mx-auto">
         <div class=" mx-auto mapa"> 
           <p class="col-10 mx-auto mb-3">Juan Manuel 487, Zona Centro, 44100 Guadalajara, Jalisco.</p>
           <p class="col-10 mx-auto mb-3">Abrimos lunes-sabado 10:30 am a 6:30 pm </p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4439.014224469872!2d-103.3452423250005!3d20.679700854186233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1e515f4a3eb%3A0x5ca2f1e43aa729f8!2sCASA%20XAVIER!5e0!3m2!1ses!2smx!4v1666321843352!5m2!1ses!2smx" width="600" height="350" style="border:0;" allowfullscreen="" class="col-12 mx-auto" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <img src="imagenes/casaXavier.png" alt="" class="col-10 ml-4 mt-3">
+        <div class="col-12 mx-auto">
+
+      <!--------Carrusel----------------------->
+      <div id="carouselExampleInterval" class="carousel slide col-12 mx-auto " data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="3000">
+                <img src="imagenes/casaXavier.png" alt="" class="col-12 mt-4">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="imagenes/vitrina1.jpg" alt="" class="col-12 mt-4">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/vitrina2.jpg" alt="" class="col-12 mt-4">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/vitrina3.jpg" alt="" class="col-12 mt-4">
+              </div>
+            </div>
+
+          </div>
+        
+        </div>
       </div>
+
+      <p class="col-10 mx-auto mt-3">Contamos con gran variedad de plumas fuente, roller y lapiceros.</p>
+      <h3 class="col-10 mx-auto">¡Visitanos!</h3>
     </div>
     
+  <!--------------------------Footer------------------------------------------------------------>
+  <?php  include_once ('componentes/footer.php')?>
+
+
 </body>
 </html>
