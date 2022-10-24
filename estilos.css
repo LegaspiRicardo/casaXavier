@@ -4,16 +4,15 @@
 }
 
 body{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(70, 70, 70);
     color: #EBCF33;
     width: 100%;
 }
 
  .img-portada{
     width: 100%;
-    position: inherit;
-    top: -20;
-    
+    position: relative;
+    max-height: 800px;
 }
 
 .primera-seccion{
@@ -21,8 +20,8 @@ body{
     
 }
 
-.segunda-seccion{
-    background-color: rgb(50, 50, 50);
+.contactanos{
+    background-color: rgb(70, 70, 70);
 }
 
 h1{
@@ -87,7 +86,7 @@ p{
 }
 
 .imagen-fondo{
-    max-height: 650px;
+    min-height: 500px;
     width: 100%;
     margin: 0 0 8% 0;
 }
@@ -121,7 +120,9 @@ p{
     max-height: 150px;
 }
 
-
+.texto-alineado-vertical{
+    margin-top: 8%;
+}
 
 .mapa{
 opacity: 0.7;
