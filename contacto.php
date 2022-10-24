@@ -20,7 +20,7 @@
     <?php  include_once ('componentes/navbar.php')?>
     
     <div class="col-12 mx-auto pt-4">
-        <h3 class="col-10 mx-auto">Escribanos</h3>
+        <h2 class="col-10 mx-auto">Escribanos</h2>
     </div>
     <!--------Hide on smaller screens----------------------->
     <div class="container d-none d-sm-block">

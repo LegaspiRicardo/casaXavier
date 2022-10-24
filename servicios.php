@@ -19,20 +19,51 @@
         <!--------------------------Navbar------------------------------------------------------------>
         <?php  include_once ('componentes/navbar.php')?>
 
-        <div class="row  mx-auto">
-            <h3 class="col-10 mx-auto">Mantenimiento y reparación.</h3>
+        <div class="row ">
+            <h2 class="col-10 mx-auto">Mantenimiento y reparación.</h2>
+        </div>
 
+        
 
-            <div class="row">
-                <div class="col-4 mx-auto mt-4">
-                    <img src="imagenes/herramientas.jpg" class="col-10    mx-auto" alt="">
-                </div>
+        <div class="row">
+            <div class="col-6 ml-auto mt-4">
+                <img src="imagenes/herramientas1.jpg" class=" col-12  ml-auto" alt="">
+            </div>
 
-                <div class="col-4 mx-auto mt-4">
-                    <p class="col-8 mx-auto"></p>
-                </div>
+            <div class="col-4 mx-auto texto-servicios">
+                <h3 class="col-12 mx-auto">Repara tu pluma fuente con nosotros.</h3>
+                <p class="col-12 mx-auto">Contamos con piezas originales y personal capacitado.</p>
             </div>
         </div>
+
+
+        <div class="row mt-5">
+            <div class="col-6 ml-auto texto-servicios">
+             
+                <h3 class="col-12 mx-auto mb-4">Ofrecemos servicios de:</h3>
+                <p class="col-12 mx-auto mb-0">-Limpieza</p>
+                <p class="col-12 mx-auto mb-0">-Cambio de piezas</p>
+                <p class="col-12 mx-auto mb-0">-Mantenimiento preventivo</p>
+            </div>
+            <div class="col-5 ml-auto">
+                <img src="imagenes/trabajadores.png" class="col-10  " alt="">
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+        <div class="col-6 ml-auto mt-4">
+                <img src="imagenes/escribiendo2-2.jpg" class=" col-12  ml-auto" alt="">
+            </div>
+
+            <div class="col-4 mx-auto texto-servicios">
+                <h3 class="col-12 mx-auto">Más de 35 años de trayectoria</h3>
+                <p class="col-12 mx-auto">Reflejan la excelente calidad de nuestro trabajo</p>
+            </div>
+
+        </div>
     
+
+        <!--------------------------Footer------------------------------------------------------------>
+        <?php  include_once ('componentes/footer.php')?>
 </body>
 </html>

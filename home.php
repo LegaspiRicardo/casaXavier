@@ -43,14 +43,14 @@
         </div>
   
         <div class="col-6  mx-auto mt-5">
-          <h2 class="col-8 mx-auto mt-5 ">Plumas fuente y estilografos</h2>
+          <a href="productos.php" class="texto-amarillo"><h2 class="col-8 mx-auto mt-5 ">Plumas fuente y estilografos</h2></a>
           <p class="col-8 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
         </div>
       </div>
 
       <div class="row pt-3">
           <div class="col-6  mx-auto mt-5">
-            <h2 class="col-8 mx-auto mt-5">Reparación y mantenimiento</h2>
+            <a href="servicios.php" class="texto-amarillo "><h2 class="col-8 mx-auto mt-5">Reparación y mantenimiento</h2></a>
             <p class="col-8 mx-auto">Piezas originales para tus plumas y estilografos</p>
           </div>
 
@@ -78,7 +78,7 @@
           <img src="Imagenes/piezas.jpg" class="col-12 mx-auto imagenes" alt="">
         </div>
           <div class="col-12  mx-auto ">
-            <h2 class="col-12 mx-auto mt-2">Reparación y mantenimiento</h2>
+            <a href="productos.php" class="texto-amarillo"><h2 class="col-12 mx-auto mt-2">Reparación y mantenimiento</h2></a>
             <p class="col-12 mx-auto">Piezas originales para tus plumas y estilografos</p>
           </div>
 

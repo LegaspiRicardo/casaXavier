@@ -163,6 +163,17 @@ footer{
     margin-left: 20%;
 }
 
+.texto-servicios{
+    margin-top: 12%;
+}
+
+.texto-amarillo{
+    color: #ccb63c;
+}
+
+.texto-amarillo:hover{
+    color: #EBCF33 ;
+}
 @media only screen and (max-width:500px){
 
 .navbar-titulo{
