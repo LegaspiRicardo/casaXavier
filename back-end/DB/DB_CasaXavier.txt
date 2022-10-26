@@ -1,0 +1,72 @@
+CREATE TABLE pluma (
+id_pluma INT PRIMARY KEY NOT NULL,
+modelo VARCHAR(60) NOT NULL,
+marca VARCHAR(60) NOT NULL,
+descripcion VARCHAR(255) NOT NULL,
+precio  VARCHAR(60) NOT NULL,
+estatus VARCHAR(60) NOT NULL);
+
+CREATE TABLE mantenimiento  (
+id_mantenimiento INT PRIMARY KEY NOT NULL,
+servicio VARCHAR(60) NOT NULL,
+precio  VARCHAR(60) NOT NULL,
+fecha_entrega DATE NOT NULL,
+estatus VARCHAR(60) NOT NULL);
+
+CREATE TABLE cliente (
+id_cliente INT PRIMARY KEY NOT NULL,
+nombre VARCHAR(60) NOT NULL,
+correo VARCHAR(60) NOT NULL,
+telefono VARCHAR(60) NOT NULL);
+
+CREATE TABLE empleado (
+id_empleado INT PRIMARY KEY NOT NULL,
+nombres VARCHAR(60) NOT NULL,
+apellido_pat VARCHAR(60) NOT NULL,
+apellido_mat VARCHAR(60) NOT NULL,
+calle VARCHAR(60) NOT NULL,
+numero VARCHAR(60) NOT NULL,
+colonia VARCHAR(60) NOT NULL,
+cp INT NOT NULL,
+correo VARCHAR(60) NOT NULL,
+cargo VARCHAR(60) NOT NULL);
+
+CREATE TABLE empleado_vende_pluma (
+id_empleado INT NOT NULL,
+id_pluma INT NOT NULL,
+fecha DATETIME NOT NULL,
+cantidad INT NOT NULL);
+
+CREATE TABLE empleado_registra_pluma (
+id_empleado INT NOT NULL,
+id_pluma INT NOT NULL,
+fecha DATETIME NOT NULL,
+cantidad INT NOT NULL);
+
+CREATE TABLE empleado_ejerce_mantenimiento (
+id_empleado INT NOT NULL,
+id_mantenimiento INT NOT NULL);
+
+CREATE TABLE cliente_solicita_mantenimiento (
+id_cliente INT NOT NULL,
+id_mantenimiento INT NOT NULL,
+fecha DATETIME NOT NULL);
+
+CREATE TABLE pluma_mantenimiento (
+id_mantenimiento INT NOT NULL,
+modelo VARCHAR(60) NOT NULL,
+marca VARCHAR(60) NOT NULL,
+descripcion VARCHAR(255) NOT NULL);
+
+
+
+
+ALTER TABLE empleado_vende_pluma ADD CONSTRAINT empleado_vende_pluma_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
+ALTER TABLE empleado_vende_pluma ADD CONSTRAINT empleado_vende_pluma_id_pluma FOREIGN KEY (id_pluma) REFERENCES pluma(id_pluma);
+ALTER TABLE empleado_registra_pluma ADD CONSTRAINT empleado_registra_pluma_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
+ALTER TABLE empleado_registra_pluma ADD CONSTRAINT empleado_registra_pluma_id_pluma FOREIGN KEY (id_pluma) REFERENCES pluma(id_pluma);
+ALTER TABLE empleado_ejerce_mantenimiento ADD CONSTRAINT empleado_ejerce_mantenimiento_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
+ALTER TABLE empleado_ejerce_mantenimiento ADD CONSTRAINT empleado_ejerce_mantenimiento_id_mantenimiento FOREIGN KEY (id_mantenimiento) REFERENCES mantenimiento (id_mantenimiento);
+ALTER TABLE cliente_solicita_mantenimiento ADD CONSTRAINT cliente_solicita_mantenimiento_id_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente);
+ALTER TABLE cliente_solicita_mantenimiento ADD CONSTRAINT cliente_solicita_mantenimiento_id_mantenimiento FOREIGN KEY (id_mantenimiento) REFERENCES mantenimiento (id_mantenimiento);
+ALTER TABLE pluma_mantenimiento ADD CONSTRAINT pluma_mantenimiento_id_mantenimiento FOREIGN KEY (id_mantenimiento) REFERENCES mantenimiento (id_mantenimiento);
