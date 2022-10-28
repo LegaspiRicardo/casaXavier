@@ -15,10 +15,14 @@ if(isset($_REQUEST['opcion'])){
             $pluma->marca=$_REQUEST['marca'];
             $pluma->descripcion=$_REQUEST['descripcion'];
             $pluma->precio=$_REQUEST['precio'];
+            $pluma->estatus=$_REQUEST['estatus'];
             $resultado='';
             echo $pluma->crear();
 
+
           //  header('Location:../../');
+
+
             break;
 
             case '2': 
@@ -27,6 +31,8 @@ if(isset($_REQUEST['opcion'])){
             $pluma->marca=$_REQUEST['marca'];
             $pluma->descripcion=$_REQUEST['descripcion'];
             $pluma->precio=$_REQUEST['precio'];
+            $pluma->estatus=$_REQUEST['estatus'];
+            $pluma->comentarios=$_REQUEST['comentarios'];
             $pluma->id_pluma=$_REQUEST['id_pluma'];
             $resultado='';
             echo $pluma->actualizar();
@@ -43,9 +49,8 @@ if(isset($_REQUEST['opcion'])){
             default: echo"opcion invalida";
     }
 
-
- //   header('Location: ../../front_end/vistas/dashboard/index.php?resultado='.$resultado);
-   // exit(); 
+    header('Location: ../../front-end/vistas/publico/pluma/index.php?resultado='.$resultado);
+    exit(); 
 
 }
 
@@ -53,3 +58,4 @@ if(isset($_REQUEST['opcion'])){
 
 
 ?>
+

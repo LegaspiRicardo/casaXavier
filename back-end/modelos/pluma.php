@@ -9,6 +9,7 @@ class Pluma implements CRUD
     public $marca;
     public $descripcion;
     public $precio;
+    public $estatus;
 
     function crear()
     {
@@ -16,14 +17,15 @@ class Pluma implements CRUD
                 $c=new Conexion();
                 $conn=$c->getConection();
                 $stmt = $conn->prepare("
-                    INSERT INTO pluma (modelo, marca, descripcion, precio)
-                    VALUES (:modelo, :marca, :descripcion, :precio)");
+                    INSERT INTO pluma (modelo, marca, descripcion, precio, estatus)
+                    VALUES (:modelo, :marca, :descripcion, :precio, :estatus)");
                 
-            $stmt->bindParam(':modelo', $this->modelo);
-            $stmt->bindParam(':marca', $this->marca);
-            $stmt->bindParam(':descripcion', $this->descripcion);
-            $stmt->bindParam(':precio', $this->precio);
-            $stmt->execute();
+                $stmt->bindParam(':modelo', $this->modelo);
+                $stmt->bindParam(':marca', $this->marca);
+                $stmt->bindParam(':descripcion', $this->descripcion);
+                $stmt->bindParam(':precio', $this->precio);
+                $stmt->bindParam(':estatus', $this->estatus);
+                $stmt->execute();
                 return $stmt->rowCount();
             }
             catch(PDOException $e)
@@ -44,13 +46,14 @@ class Pluma implements CRUD
                 $conn=$c->getConection();
 
                 $stmt = $conn->prepare("
-                UPDATE pluma SET modelo=:modelo, marca=:marca, descripcion=:descripcion, precio=:precio  
+                UPDATE pluma SET modelo=:modelo, marca=:marca, descripcion=:descripcion, precio=:precio, estatus=:estatus  
                 WHERE id_pluma=:id_pluma");
+
                 $stmt->bindParam(':modelo', $this->modelo);
                 $stmt->bindParam(':marca', $this->marca);
                 $stmt->bindParam(':descripcion', $this->descripcion);
                 $stmt->bindParam(':precio', $this->precio);
-            
+                $stmt->bindParam(':estatus', $this->estatus);
                 $stmt->bindParam(':id_pluma',$this->id_pluma);
                 $stmt->execute();
 
@@ -128,8 +131,6 @@ class Pluma implements CRUD
             $conn = null;
             }  
     }
-
-
 }
 
 ?>
