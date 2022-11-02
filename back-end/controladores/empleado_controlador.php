@@ -14,10 +14,7 @@ if(isset($_REQUEST['opcion'])){
             $empleado->nombres=$_REQUEST['nombres'];
             $empleado->apellido_pat=$_REQUEST['apellido_pat'];
             $empleado->apellido_mat=$_REQUEST['apellido_mat'];
-            $empleado->calle=$_REQUEST['calle'];
-            $empleado->numero=$_REQUEST['numero'];
-            $empleado->colonia=$_REQUEST['colonia'];
-            $empleado->cp=$_REQUEST['cp'];
+            $empleado->telefono=$_REQUEST['telefono'];
             $empleado->correo=$_REQUEST['correo'];
             $empleado->cargo=$_REQUEST['cargo'];
             $resultado='';
@@ -34,10 +31,7 @@ if(isset($_REQUEST['opcion'])){
             $empleado->nombres=$_REQUEST['nombres'];
             $empleado->apellido_pat=$_REQUEST['apellido_pat'];
             $empleado->apellido_mat=$_REQUEST['apellido_mat'];
-            $empleado->calle=$_REQUEST['calle'];
-            $empleado->numero=$_REQUEST['numero'];
-            $empleado->colonia=$_REQUEST['colonia'];
-            $empleado->cp=$_REQUEST['cp'];
+            $empleado->telefono=$_REQUEST['telefono'];
             $empleado->correo=$_REQUEST['correo'];
             $empleado->cargo=$_REQUEST['cargo'];
             $empleado->id_empleado=$_REQUEST['id_empleado'];

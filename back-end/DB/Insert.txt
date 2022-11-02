@@ -1,6 +1,5 @@
 Ingresar 5 empleados
 
-INSERT INTO `empleado` (`id_empleado`, `nombres`, `apellido_pat`, `apellido_mat`, `calle`, `numero`, `colonia`, `cp`, `correo`, `cargo`) VALUES ('1', 'Empleado 1', 'Perez', 'Lopez', 'Independencia', '24', 'Centro', '4325', 'empe@gmail.com', 'Vendedor'), ('2', 'Empleado2', 'kiko', 'kabrera', 'periferico', '43', 'praderas ', '5298', 'emplead2@gmaill.com', 'Admin'), ('3', 'Empleado3', 'madrigal', 'lopez', 'Belisario', '235', 'Cañadas', '987', 'emple@ggmail.com', 'Tecnico'), ('4', 'Empleado4', 'madrigal', 'camos', 'circunvalacion', '5245', 'campos', '24542', 'em@gmail.com', 'Vendedor'), ('5', 'Empleado5', 'marques', 'sade', 'federalismo', '53c', 'Sauce', '54353', 'empleado@gmail.com', 'Tecnico');
 
 
 Ingresar 15 plumas
