@@ -19,6 +19,8 @@ if(isset($_REQUEST['opcion'])){
             $resultado='';
             echo $pluma->crear();
 
+            header('Location: ../../front-end/vistas/publico/panel-control/home.php?resultado='.$resultado);
+            exit(); 
 
           //  header('Location:../../');
 
@@ -32,10 +34,12 @@ if(isset($_REQUEST['opcion'])){
             $pluma->descripcion=$_REQUEST['descripcion'];
             $pluma->precio=$_REQUEST['precio'];
             $pluma->estatus=$_REQUEST['estatus'];
-            $pluma->comentarios=$_REQUEST['comentarios'];
             $pluma->id_pluma=$_REQUEST['id_pluma'];
             $resultado='';
             echo $pluma->actualizar();
+
+            header('Location: ../../front-end/vistas/publico/pluma/index.php?resultado='.$resultado);
+            exit(); 
                 break;  //Actualizar
             
 
@@ -44,13 +48,13 @@ if(isset($_REQUEST['opcion'])){
             $pluma->id_pluma=$_REQUEST['id_pluma'];
             $resultado='';
             echo $pluma->borrar();
-                
+            header('Location: ../../front-end/vistas/publico/pluma/index.php?resultado='.$resultado);
+            exit(); 
                 break;
             default: echo"opcion invalida";
     }
 
-    header('Location: ../../front-end/vistas/publico/pluma/index.php?resultado='.$resultado);
-    exit(); 
+
 
 }
 
