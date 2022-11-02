@@ -33,7 +33,22 @@
       }
     </style>
 
-    
+      <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+
+  
+  <link id="pagestyle" href="../../../material-dashboard-master/assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css">
+
     <!-- Custom styles for this template -->
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -42,37 +57,52 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <link rel="stylesheet" href="../panel-control/estilos.css">
   </head>
 
  
 
 <body>
-   
 
 
-
-
-<div class=" col-9 mb-5">
-      <br>
-
-    <?php  
-      include_once('crear.php');
+<?php  
+      include_once('../panel-control/aside.php');
     ?>  
+
+
+<div class=" col-12 mb-4 mx-auto">
+   <h2 class="col-8 mx-auto text-center">Plumas existentes</h2>
+
+
 
     </div>
      
+
+
+
    <div class="col-8 mx-auto">
 
-      <?php  include_once('data.php'); ?>
+
+
+      <?php  include_once('data.php'); 
+      
+            include_once('actualizar.php');
+            include_once('borrar.php');
+      ?>
+
+
 
    </div>
       
+<div class="col-8 mx-auto">
 
+
+
+   <?php
+  include_once ('../panel-control/footer.php');
+  ?>
 
 </div>
-
-
       
   </body>
 </html>

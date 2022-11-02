@@ -1,0 +1,19 @@
+.icono-derecha{
+    margin-left: 70%;
+}
+
+.btn-registrar-pluma-dash{
+    background-color: rgb(113, 114, 114);
+    margin-left: 80%;
+}
+
+.form-control{
+    background-color: rgb(246, 246, 246);
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    width: 80%;
+    z-index: 2;
+}

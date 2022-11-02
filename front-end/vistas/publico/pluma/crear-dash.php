@@ -1,8 +1,8 @@
 <?php //echo $_GET['resultado']; ?>
 
 <!--------------------- Button trigger modal ------------------>
-<div class="icon icon-lg icon-shape bg-gradient-secondary shadow text-center border-radius-xl mt-n2 position-absolute icono-derecha">
-  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal1">
+<div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n2 position-absolute icono-derecha">
+  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal2">
     <i class="material-icons opacity-10 pt-3 pr-2">add</i>
   </button>
 </div>
@@ -22,21 +22,21 @@ $("#exampleModal1").modal('show');
 </style>
 
 <!------------------------------- Modal --------------------------------->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
- <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-      <h3 class="modal-title mx-auto" id="exampleModalLabel">Registro plumas</h3>
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-       </button>
-     </div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title mx-auto" id="exampleModalLabel">Registro plumas</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
-   <div class="modal-body">
-     <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="POST" enctype="multipart/form-data" >
+    <div class="modal-body">
+      <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="POST" enctype="multipart/form-data" >
 
-       <input type="hidden" name="opcion" value="1">
-       <!------------------------------------Informacion personal------------------------------------------>
+        <input type="hidden" name="opcion" value="1">
+        <!------------------------------------Informacion personal------------------------------------------>
 
 
       
@@ -76,19 +76,19 @@ $("#exampleModal1").modal('show');
           <input type="text" class="form-control" id="validationCustom03" name="estatus">
         </div>
       </div>
- 
+
     </div>
-       <br>
+      <br>
       <!------------------------------------Modal footer------------------------------------------>
       <div class="modal-footer">
         <input type="submit" class=" col-8 btn btn-info mx-auto" value="Registrar Pluma">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn bg-secondary text-white" data-dismiss="modal">Cerrar</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
 
-     </form>
-   </div>
- </div>
+    </form>
+  </div>
+</div>
 </div>
 
 
