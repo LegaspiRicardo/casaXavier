@@ -47,7 +47,7 @@
 
   
   <link id="pagestyle" href="../../../material-dashboard-master/assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
-  <link rel="stylesheet" href="estilos.css">
+
 
     <!-- Custom styles for this template -->
 
@@ -57,7 +57,7 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="../panel-control/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
   </head>
 
  
@@ -71,37 +71,33 @@
 
 
 <div class=" col-12 mb-4 mx-auto">
-   <h2 class="col-8 mx-auto text-center">Equipo Casa Xavier</h2>
+   <h2 class="col-9 ml-auto text-left font-weight-bolder mt-2">Equipo Casa Xavier</h2>
 
-
-
-    </div>
-     
-
-
-
-   <div class="col-10 mx-auto">
-
-
- 
-
+<div class="row">
    <?php
-  include_once ('data.php');
-  ?>
-
-
-
-
-
-<div class="col-8 mx-auto">
-
-
-
-   <?php
-  include_once ('../panel-control/footer.php');
-  ?>
+    include_once ('crear.php');
+    ?>
 
 </div>
+
+   <div class="col-10 mx-auto mt-5">
+
+    <?php
+    include_once ('data.php');
+    ?>
+
+  </div>
+     
+
+    <div class="col-11 mx-auto">
+
+      <?php
+      include_once ('../panel-control/footer.php');
+      ?>
+
+    </div>
       
+
+    </div>
   </body>
 </html>
