@@ -18,7 +18,7 @@ class Empleado implements CRUD
                 $c=new Conexion();
                 $conn=$c->getConection();
                 $stmt = $conn->prepare("
-                    INSERT INTO pluma (nombres, apellido_pat, apellido_mat, telefono, correo, cargo)
+                    INSERT INTO empleado (nombres, apellido_pat, apellido_mat, telefono, correo, cargo)
                     VALUES (:nombres, :apellido_pat, :apellido_mat, :telefono, :correo, :cargo)");
                 
                 $stmt->bindParam(':nombres', $this->nombres);
