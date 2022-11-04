@@ -133,18 +133,19 @@
 
             <div class="card ">
               <div class="card-header p-3 pt-2 bg-transparent">   
-                <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n2 position-absolute icono-derecha">
-                  <i class="material-icons opacity-10">person_add</i>
-                </div>
+
                 <div class="text-start   pt-1">
                   <p class="text-sm mb-0 text-capitalize ">Clientes</p>
-                  <h4 class="mb-0 ">Agregar cliente</h4>
+                  <h4 class="mb-0 ">Registrar cliente</h4>
                 </div>
               </div>
                 <hr class="horizontal my-0 dark">
               <div class="card-footer p-3">
-                <p class="mb-0 ">Just updated</p>
+                <p class="mb-0 ">Nuevo</p>
               </div>
+              <?php  
+                  include('../../privado/cliente/crear-dash-publico.php');
+                ?> 
             </div>      
           </div>
         </div>

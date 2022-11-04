@@ -79,7 +79,7 @@
                 <td><?php echo $empleado->cargo ?></td>
                 <td><?php echo $empleado->telefono ?></td>
                 <td><?php echo $empleado->correo ?></td>
-                <td class="status"><span class="active">Active</span></td>
+                <td class="status"><span class="active">Activo</span></td>
                 <td><a href="index.php?id_empleado=<?php echo $empleado->id_empleado ?>&editar" class="edit"> edit</td>
                 <td><a href="index.php?id_empleado=<?php echo $empleado->id_empleado ?>&borrar" class="erase"> x  </a></td>
   
