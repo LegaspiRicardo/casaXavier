@@ -1,9 +1,9 @@
 <?php //echo $_GET['resultado']; ?>
 
 <!--------------------- Button trigger modal ------------------>
-<div class="icon icon-lg icon-shape bg-gradient-secondary shadow text-center border-radius-xl mt-n2 position-absolute icono-derecha">
-  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal1">
-    <i class="material-icons opacity-10 pt-3 pr-2">add</i>
+<div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n2 position-absolute icono-derecha">
+  <button type="button" class="btn p-0 mt-2" data-toggle="modal" data-target="#exampleModal1">
+    <i class="material-icons opacity-10 pt-3">add</i>
   </button>
 </div>
 
@@ -82,7 +82,7 @@ $("#exampleModal1").modal('show');
       <!------------------------------------Modal footer------------------------------------------>
       <div class="modal-footer">
         <input type="submit" class=" col-8 btn btn-info mx-auto" value="Registrar Pluma">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Cerrar</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
 

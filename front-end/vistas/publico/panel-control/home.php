@@ -154,7 +154,7 @@
             <div class="card mb-4 ">
               <h4 class="col-6 mx-auto text-center ">Inventario</h4>
                 <div class="row">
-                  <div class="col-10 mx-auto">
+                  <div class="col-12 mx-auto">
                     <?php 
                       include_once('../pluma/data-dash.php');
                     ?>

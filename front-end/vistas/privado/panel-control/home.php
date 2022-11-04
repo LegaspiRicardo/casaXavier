@@ -36,7 +36,7 @@
 
 
   <title>
-  Casa Xavier Admin
+  Panel de control
   </title>
 
   <!--     Fonts and icons     -->
@@ -74,7 +74,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="d-flex flex-column h-100">
-                  <h2 class=" mb-0">Panel de control </h2>
+                  <h2 class=" mb-0">Casa Xavier Admin </h2>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
             <div class="card  mb-2">
               <div class="card-header p-3 pt-2 ">
                 <?php  
-                  include_once('../pluma/crear-dash.php');
+                  include_once('../pluma/crear.php');
                 ?>  
                 <div class="text-start pt-1">
                   <p class="text-sm mb-0 text-capitalize">Inventario</p>
@@ -154,7 +154,7 @@
             <div class="card mb-4 ">
               <h4 class="col-6 mx-auto text-center ">Inventario</h4>
                 <div class="row">
-                  <div class="col-10 mx-auto">
+                  <div class="col-12 mx-auto">
                     <?php 
                       include_once('../pluma/data-dash.php');
                     ?>

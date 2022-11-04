@@ -1,6 +1,6 @@
 <?php
 
-  include_once '../../../../back-end/modelos/pluma.php';
+  include_once '../../../../back-end/modelos/cliente.php';
   
 
 ?>
@@ -13,11 +13,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Inventario</title>
+    <title>Clientes casa Xavier</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
-
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -31,10 +30,6 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
-
-      body{
-        background-color:gray;
       }
     </style>
 
@@ -62,7 +57,7 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="../panel-control/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
   </head>
 
  
@@ -76,29 +71,39 @@
 
 
 <div class=" col-12 mb-4 mx-auto">
-   <h2 class="col-7 mx-auto text-left font-weight-bolder mt-2">Plumas existentes</h2>
+   <h2 class="col-10 ml-auto text-left font-weight-bolder mt-2">Clientes Casa Xavier</h2>
 
-  <div class="row">
+<div class="row">
+   <?php
+    include_once ('crear.php');
+    ?>
+
+</div>
+
+    <div class="col-2">
+
+    </div>
+
+   <div class="col-3 mr-auto mt-5">
+
     <?php
-      include_once ('crear.php');
+    include_once ('data.php');
+    include_once ('actualizar.php');
+    include_once ('borrar.php');
     ?>
+
   </div>
+     
 
+    <div class="col-10 mr-auto">
 
+      <?php
+      include_once ('../panel-control/footer.php');
+      ?>
 
-  <div class="col-8 mx-auto mt-5">
-    <?php  
-      include_once('data.php'); 
-      include_once('actualizar.php');
-      include_once('borrar.php');
-    ?>
-  </div>
+    </div>
       
-  <div class="col-10 ml-auto">
-  <?php
-    include_once ('../panel-control/footer.php');
-  ?>
-  </div>
-</div>      
+
+    </div>
   </body>
 </html>

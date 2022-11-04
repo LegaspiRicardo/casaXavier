@@ -3,17 +3,17 @@
         echo $_GET['resultado'];
     }  
 
-        $empleado=new Empleado();
-        if(isset($_GET['id_empleado']) && isset($_GET['editar'])){
-        $empleado->id_empleado=$_GET['id_empleado'];
-        $empleado=$empleado->leer_id();
+        $cliente=new Cliente();
+        if(isset($_GET['id_cliente']) && isset($_GET['editar'])){
+        $cliente->id_cliente=$_GET['id_cliente'];
+        $cliente=$cliente->leer_id();
 ?>
 
 
 
 <script>
 $(document).ready(function(){
-$("#exampleModal7").modal('show');
+$("#exampleModal10").modal('show');
 });
 </script>
 <!------------------------ Styles------------------------------->
@@ -22,23 +22,22 @@ $("#exampleModal7").modal('show');
 
 
 <!------------------------------- Modal --------------------------------->
-<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header"> 
-                <h3 class="modal-title mx-auto" id="exampleModalLabel">Editar empleado</h3>
+                <h3 class="modal-title mx-auto" id="exampleModalLabel">Editar información</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-                               
         <div class="modal-body">
-            <form class="needs-validation" novalidate action="../../../../back-end/controladores/empleado_controlador.php" method="POST" enctype="multipart/form-data" >
+            <form class="needs-validation" novalidate action="../../../../back-end/controladores/cliente_controlador.php" method="POST" enctype="multipart/form-data" >
 
             <input type="hidden" name="opcion" value="2">
-            <input type="hidden" name="id_empleado" value="<?php echo $empleado->id_empleado?>">
+            <input type="hidden" name="id_cliente" value="<?php echo $cliente->id_cliente?>">
     <!------------------------------------Informacion personal------------------------------------------>
-        <div class="Subtitulo">
+    <div class="Subtitulo">
             <h4>Información personal</h4>
         </div>
 
@@ -47,22 +46,11 @@ $("#exampleModal7").modal('show');
           <div class="col-12 mx-auto pt-3">
             <div class="form-row"> 
               <div class="col">
-                <input type="text" class="form-control" id="validationCustom01" name="nombres" value="<?php echo $empleado->nombres?>" required>
-                <label for="validationCustom01">Nombre(s)</label>
+                <label for="validationCustom01">Nombre completo</label>
+                <input type="text" class="form-control" id="validationCustom01" name="nombre" value="<?php echo $cliente->nombre?>" required>
               </div>
             </div>
 
-            <div class="form-row"> 
-              <div class="col">
-                <input type="text" class="form-control inputForm" id="validationCustom01" name="apellido_pat" value="<?php echo $empleado->apellido_pat?>" required>
-                <label for="validationCustom01">Apellido Paterno</label>
-              </div>
-
-              <div class="col">
-                <input type="text" class="form-control inputForm" id="validationCustom02" name="apellido_mat" value="<?php echo $empleado->apellido_mat?>" required>
-                <label for="validationCustom02">Apellido Materno</label>
-              </div>
-            </div>
 
   
           </div>
@@ -76,36 +64,21 @@ $("#exampleModal7").modal('show');
         </div>
         <div class="form-row"> 
           <div class="col">
-            <input type="text" class="form-control inputForm" id="validationCustom01" name="telefono" value="<?php echo $empleado->telefono?>" required>
             <label for="validationCustom01">Telefono</label>
+            <input type="text" class="form-control inputForm" id="validationCustom01" name="telefono" value="<?php echo $cliente->telefono?>" required>
           </div>
 
           <div class="col">
-            <input type="text" class="form-control inputForm" id="validationCustom02" name="correo" value="<?php echo $empleado->correo?>" required>
             <label for="validationCustom02">Correo</label>
+            <input type="text" class="form-control inputForm" id="validationCustom02" name="correo" value="<?php echo $cliente->correo?>" required>
           </div>
         </div>
 
        <br>
-        <!------------------------------------Puesto------------------------------------------>
-        <div class="Subtitulo ">
-          <h4 >Puesto</h4>
-        </div>
-        <div class="form-row"> 
-          <div class="col styled-select black rounded ">
-                <select name="cargo" class="form-control" >
-                    <option value="Tecnico" >Tecnico</option>
-                    <option value="Ventas" >Ventas</option>
-                    <option value="<?php echo $empleado->cargo?>" selected> <?php echo $empleado->cargo?> </option>
-                </select>
-          </div>
-          
-        </div>
-<br>
-  
+
       <!------------------------------------Modal footer------------------------------------------>
       <div class="modal-footer">
-        <input type="submit" class=" col-8 btn btn-primary shadow mx-auto text-white" value="Registrar empleado">
+        <input type="submit" class=" col-8 btn btn-info shadow mx-auto text-white" value="Actualizar cliente">
         <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Cerrar</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>

@@ -33,6 +33,12 @@
   color: blue;
   }
 
+  .erase{
+    color: red;
+    opacity: 0.8;
+  }
+
+
 </style>
 
 	</head>
@@ -40,18 +46,18 @@
 	<section class="ftco-section mt-0 pt-0 col-8 mx-auto">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-12 ">
 					<div class="table-wrap">
 						<table class="table table-responsive-xl">
                             <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Puesto</th>
-                                    <th>Telefono</th>
-                                    <th>Correo</th>
-                                    <th>Estatus</th>
-                                    <th> </th>
-                                    <th> </th>
+                                <tr class="bg-secondary">
+                                    <th class="text-white">Nombre</th>
+                                    <th class="text-white">Puesto</th>
+                                    <th class="text-white">Telefono</th>
+                                    <th class="text-white">Correo</th>
+                                    <th class="text-white">Estatus</th>
+                                    <th class="text-secondary"> editar</th>
+                                    <th class="text-secondary"> borrar </th>
                                 </tr>
                             </thead>
 
@@ -75,12 +81,11 @@
                 <td><?php echo $empleado->correo ?></td>
                 <td class="status"><span class="active">Active</span></td>
                 <td><a href="index.php?id_empleado=<?php echo $empleado->id_empleado ?>&editar" class="edit"> edit</td>
-
+                <td><a href="index.php?id_empleado=<?php echo $empleado->id_empleado ?>&borrar" class="erase"> x  </a></td>
+  
                 
                 <td>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true"><i class="fa fa-close"></i></span>
-                    </button>
+
                 </td>
             </tr>
     <?php 

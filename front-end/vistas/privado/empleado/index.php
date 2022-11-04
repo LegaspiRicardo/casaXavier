@@ -84,6 +84,8 @@
 
     <?php
     include_once ('data.php');
+    include_once ('actualizar.php');
+    include_once ('borrar.php');
     ?>
 
   </div>
