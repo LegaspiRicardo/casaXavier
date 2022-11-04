@@ -36,6 +36,11 @@ th{
     text-align:center;
     border-bottom: 1px solid #dddd;
   }
+
+tr{
+  background-color: white;
+}
+
   tr:hover {background-color: rgb(121, 172, 210, 0.4);}
 
   .tableIcon{
@@ -45,9 +50,6 @@ th{
 .tableIcon1{
   width:70%;
 }
-th{
-    text-align: center;
-  }
 
   .edit{
     font-size: 14px;
