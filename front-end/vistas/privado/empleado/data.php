@@ -84,9 +84,6 @@
                 <td><a href="index.php?id_empleado=<?php echo $empleado->id_empleado ?>&borrar" class="erase"> x  </a></td>
   
                 
-                <td>
-
-                </td>
             </tr>
     <?php 
     }

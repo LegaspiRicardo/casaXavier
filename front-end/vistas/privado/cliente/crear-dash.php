@@ -1,7 +1,7 @@
 <?php //echo $_GET['resultado']; ?>
 
 <!--------------------- Button trigger modal ------------------>
-<div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl  position-absolute icono-medio">
+<div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl  position-absolute icono-derecha">
   <button type="button" class="btn p-0 mt-2" data-toggle="modal" data-target="#exampleModal9">
     <i class="material-icons opacity-10 pt-3">person_add</i>
   </button>

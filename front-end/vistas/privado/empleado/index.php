@@ -90,16 +90,13 @@
 
   </div>
      
+ 
 
-    <div class="col-11 mx-auto">
+    </div>
+    
 
-      <?php
+    <?php
       include_once ('../panel-control/footer.php');
       ?>
-
-    </div>
-      
-
-    </div>
   </body>
 </html>

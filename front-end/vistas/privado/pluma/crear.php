@@ -13,7 +13,6 @@ $("#exampleModal1").modal('show');
 });
 </script> -->
 <!------------------------ Styles------------------------------->
-<link rel="stylesheet" href="estilos.css">
 
 <style>
   .labels{
