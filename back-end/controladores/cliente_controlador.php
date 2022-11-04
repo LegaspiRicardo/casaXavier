@@ -16,13 +16,9 @@ if(isset($_REQUEST['opcion'])){
             $cliente->telefono=$_REQUEST['telefono'];
             $resultado='';
             echo $cliente->crear();
-
-          //  header('Location:../../');
-
-
-            break;
-
-            case '2': 
+                break;
+    
+        case '2': 
             $cliente=new Cliente();
             $cliente->nombre=$_REQUEST['nombre'];
             $cliente->correo=$_REQUEST['correo'];
@@ -33,14 +29,35 @@ if(isset($_REQUEST['opcion'])){
                 break;  //Actualizar
             
 
-            case '3':
+        case '3':
             $cliente=new Cliente();
             $cliente->id_cliente=$_REQUEST['id_cliente'];
             $resultado='';
             echo $cliente->borrar();
-                
                 break;
             default: echo"opcion invalida";
+
+        case '4':      //crear privado en dash
+            $cliente=new Cliente();
+            $cliente->nombre=$_REQUEST['nombre'];
+            $cliente->correo=$_REQUEST['correo'];
+            $cliente->telefono=$_REQUEST['telefono'];
+            $resultado='';
+            echo $cliente->crear();
+            header('Location: ../../front-end/vistas/privado/panel-control/home.php?resultado='.$resultado);
+            exit(); 
+                break;
+
+        case '5':      //crear publico en dash
+            $cliente=new Cliente();
+            $cliente->nombre=$_REQUEST['nombre'];
+            $cliente->correo=$_REQUEST['correo'];
+            $cliente->telefono=$_REQUEST['telefono'];
+            $resultado='';
+            echo $cliente->crear();
+            header('Location: ../../front-end/vistas/publico/panel-control/home.php?resultado='.$resultado);
+            exit(); 
+                break;
     }
 
 
