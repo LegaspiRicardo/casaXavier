@@ -20,8 +20,6 @@ if(isset($_REQUEST['opcion'])){
             $resultado='';
             echo $empleado->crear();
 
-            header('Location: ../../front-end/vistas/privado/empleado/index.php?resultado='.$resultado);
-            exit(); 
           //  header('Location:../../');
 
 
@@ -52,6 +50,8 @@ if(isset($_REQUEST['opcion'])){
     }
 
 
+    header('Location: ../../front-end/vistas/privado/empleado/index.php?resultado='.$resultado);
+    exit(); 
 
 }
 
