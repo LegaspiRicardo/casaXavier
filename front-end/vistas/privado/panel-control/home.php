@@ -36,7 +36,7 @@
 
 
   <title>
-  Panel de control
+  Panel de control 
   </title>
 
   <!--     Fonts and icons     -->
@@ -69,12 +69,13 @@
   <div class="container-fluid py-4 pt-0">
     <div class="row">
       <div class="col-lg-10 mx-auto position-relative z-index-2">
-        <div class="card card-plain mb-4">
+        <div class="card card-plain mb-0">
           <div class="card-body p-3">
             <div class="row">
               <div class="col-lg-6">
                 <div class="d-flex flex-column h-100">
                   <h2 class=" mb-0">Casa Xavier Admin </h2>
+                  <p>Usuario: Administrador </p>
                 </div>
               </div>
             </div>
@@ -99,7 +100,7 @@
             <div class="card  mb-2">
               <div class="card-header p-3 pt-2 ">
                 <?php  
-                  include_once('../pluma/crear.php');
+                  include_once('../pluma/crear-dash.php');
                 ?>  
                 <div class="text-start pt-1">
                   <p class="text-sm mb-0 text-capitalize">Inventario</p>
@@ -108,7 +109,7 @@
               </div>
                 <hr class="dark horizontal my-0">
               <div class="card-footer p-3">
-                <p class="mb-0">Nuevas o existentes</p>
+                <p class="mb-0">Plumas existentes en base de datos</p>
               </div>
             </div>
 

@@ -35,7 +35,7 @@ $("#exampleModal1").modal('show');
     <div class="modal-body">
       <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="POST" enctype="multipart/form-data" >
 
-        <input type="hidden" name="opcion" value="1">
+        <input type="hidden" name="opcion" value="2">
         <!------------------------------------Informacion personal------------------------------------------>
 
 

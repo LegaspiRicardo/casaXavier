@@ -11,6 +11,12 @@
     background-color: rgb(246, 246, 246);
 }
 
+footer{
+    position: sticky;
+    bottom: 0;
+    width: 80%;
+    z-index: 2;
+}
 
 h2{
     color: black;

@@ -42,7 +42,7 @@ $("#exampleModal3").modal('show');
 
             <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="GET" enctype="multipart/form-data">
 
-            <input type="hidden" name="opcion" value="2">
+            <input type="hidden" name="opcion" value="3">
             <input type="hidden" name="id_pluma" value="<?php echo $pluma->id_pluma?>">
         <!------------------------------------Informacion personal------------------------------------------>
 

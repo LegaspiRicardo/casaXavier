@@ -93,6 +93,15 @@
       include_once('borrar.php');
     ?>
   </div>
+
+
+  <h2 class="col-2 mx-auto text-left font-weight-bolder mt-5 pt-5">Plumas agotadas</h2>
+
+  <div class="col-4 mx-auto mt-3 mb-5 pb-3">
+    <?php  
+      include_once('data-agotado.php'); 
+    ?>
+  </div>
       
   <div class="col-10 ml-auto">
   <?php
