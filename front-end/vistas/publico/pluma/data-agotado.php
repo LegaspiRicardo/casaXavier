@@ -5,7 +5,7 @@
         echo $_GET['resultado'];
     }
     $pluma=new Pluma();
-    $plumas=$pluma->leer_existencia();
+    $plumas=$pluma->leer_agotado();
    
     ?>
 
@@ -39,17 +39,6 @@ th{
   }
   tr:hover {background-color: rgb(121, 172, 210, 0.4);}
 
-  .tableIcon{
-  width:40%;
-}
-
-.tableIcon1{
-  width:70%;
-}
-th{
-    text-align: center;
-  }
-
   .edit{
     font-size: 14px;
     opacity: 0.5;
@@ -63,18 +52,17 @@ th{
   .edit:hover{
   color: blue;
   }
+
     </style>
     
 <table class="table  mx-auto">
   <thead>
     <tr class="bg-secondary">
-      <th scope="col">ID</th>
-      <th scope="col">Marca</th>
+      <th scope="col">Id</th>
       <th scope="col">Modelo</th>
-      <th scope="col">Descripcion</th>
+      <th scope="col">Marca</th>
       <th scope="col">Precio</th>
-      <th scope="col">Estatus</th>
-      <th scope="col"> </th>
+      <th scope="col">Piezas</th>
       <th scope="col"> </th>
     </tr>
   </thead>
@@ -85,13 +73,11 @@ th{
       ?>
   <tr>
       <td><?php echo $pluma->id_pluma ?></td>
-      <td><?php echo $pluma->marca ?></td>
       <td><?php echo $pluma->modelo ?></td>
-      <td><?php echo $pluma->descripcion ?></td>
+      <td><?php echo $pluma->marca ?></td>
       <td><?php echo $pluma->precio ?></td>
-      <td><?php echo $pluma->estatus ?></td>
+      <td><?php echo $pluma->estatus ?></td>      
       <td> <a href="index.php?id_pluma=<?php echo $pluma->id_pluma ?>&editar" class="edit">edit  </a></td>
-      <td> <a href="index.php?id_pluma=<?php echo $pluma->id_pluma ?>&borrar" class="erase"> x  </a></td>
   </tr>
   
   <?php 

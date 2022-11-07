@@ -5,7 +5,7 @@
         echo $_GET['resultado'];
     }
     $pluma=new Pluma();
-    $plumas=$pluma->leer_todo();
+    $plumas=$pluma->leer_existencia();
    
     ?>
 

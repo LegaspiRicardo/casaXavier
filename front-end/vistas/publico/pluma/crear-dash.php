@@ -2,7 +2,7 @@
 
 <!--------------------- Button trigger modal ------------------>
 <div class="icon icon-lg icon-shape bg-gradient-info shadow text-center border-radius-xl mt-n2 position-absolute icono-derecha">
-  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal2">
+  <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal6">
     <i class="material-icons opacity-10 pt-3 pr-2">add</i>
   </button>
 </div>
@@ -22,7 +22,7 @@ $("#exampleModal1").modal('show');
 </style>
 
 <!------------------------------- Modal --------------------------------->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -35,7 +35,7 @@ $("#exampleModal1").modal('show');
     <div class="modal-body">
       <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="POST" enctype="multipart/form-data" >
 
-        <input type="hidden" name="opcion" value="1">
+        <input type="hidden" name="opcion" value="6">
         <!------------------------------------Informacion personal------------------------------------------>
 
 

@@ -21,12 +21,12 @@ if(isset($_GET['resultado'])){
 
 <script>
 $(document).ready(function(){
-$("#exampleModal3").modal('show');
+$("#exampleModal7").modal('show');
 });
 </script>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
@@ -42,7 +42,7 @@ $("#exampleModal3").modal('show');
 
             <form class="needs-validation" novalidate action="../../../../back-end/controladores/pluma_controlador.php" method="GET" enctype="multipart/form-data">
 
-            <input type="hidden" name="opcion" value="2">
+            <input type="hidden" name="opcion" value="7">
             <input type="hidden" name="id_pluma" value="<?php echo $pluma->id_pluma?>">
         <!------------------------------------Informacion personal------------------------------------------>
 
