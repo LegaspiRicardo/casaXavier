@@ -131,6 +131,47 @@ class Pluma implements CRUD
             $conn = null;
             }  
     }
+
+    function leer_existencia()
+    {
+        try{
+            $c=new Conexion();
+            $conn=$c->getConection();
+
+            $stmt = $conn->prepare("
+            SELECT * FROM `pluma` WHERE estatus = 'Existente'");
+            $stmt->setFetchMode(PDO::FETCH_OBJ);
+            $stmt->execute();
+            $result=$stmt->fetchAll();
+            return $result;
+
+            } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            } finally{
+            $conn = null;
+            }  
+    }
+
+
+    function leer_agotado()
+    {
+        try{
+            $c=new Conexion();
+            $conn=$c->getConection();
+
+            $stmt = $conn->prepare("
+            SELECT * FROM `pluma` WHERE estatus = 'Agotado'");
+            $stmt->setFetchMode(PDO::FETCH_OBJ);
+            $stmt->execute();
+            $result=$stmt->fetchAll();
+            return $result;
+
+            } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            } finally{
+            $conn = null;
+            }  
+    }
 }
 
 ?>
