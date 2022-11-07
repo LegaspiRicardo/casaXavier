@@ -28,11 +28,14 @@ telefono VARCHAR(60) NOT NULL,
 correo VARCHAR(60) NOT NULL,
 cargo VARCHAR(60) NOT NULL);
 
-CREATE TABLE empleado_vende_pluma (
+CREATE TABLE venta (
+id_venta INT PRIMARY KEY AUTO_INCREMENT NOT NULL,  
+fecha_venta DATETIME NOT NULL,
+total VARCHAR(60) NOT NULL);
+
+CREATE TABLE empleado_genera_venta (
 id_empleado INT NOT NULL,
-id_pluma INT NOT NULL,
-fecha DATETIME NOT NULL,
-cantidad INT NOT NULL);
+id_venta INT NOT NULL);
 
 CREATE TABLE empleado_registra_pluma (
 id_empleado INT NOT NULL,
@@ -55,11 +58,18 @@ modelo VARCHAR(60) NOT NULL,
 marca VARCHAR(60) NOT NULL,
 descripcion VARCHAR(255) NOT NULL);
 
+CREATE TABLE pluma_venta (
+id_venta INT NOT NULL,
+id_pluma INT NOT NULL,
+modelo VARCHAR(60) NOT NULL,
+marca VARCHAR(60) NOT NULL,
+precio VARCHAR(60) NOT NULL,
+cantidad INT);
 
 
 
-ALTER TABLE empleado_vende_pluma ADD CONSTRAINT empleado_vende_pluma_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
-ALTER TABLE empleado_vende_pluma ADD CONSTRAINT empleado_vende_pluma_id_pluma FOREIGN KEY (id_pluma) REFERENCES pluma(id_pluma);
+ALTER TABLE empleado_genera_venta ADD CONSTRAINT empleado_genera_venta_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
+ALTER TABLE empleado_genera_venta ADD CONSTRAINT empleado_genera_venta_id_venta FOREIGN KEY (id_venta) REFERENCES venta(id_venta);
 ALTER TABLE empleado_registra_pluma ADD CONSTRAINT empleado_registra_pluma_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
 ALTER TABLE empleado_registra_pluma ADD CONSTRAINT empleado_registra_pluma_id_pluma FOREIGN KEY (id_pluma) REFERENCES pluma(id_pluma);
 ALTER TABLE empleado_ejerce_mantenimiento ADD CONSTRAINT empleado_ejerce_mantenimiento_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);
@@ -67,3 +77,5 @@ ALTER TABLE empleado_ejerce_mantenimiento ADD CONSTRAINT empleado_ejerce_manteni
 ALTER TABLE cliente_solicita_mantenimiento ADD CONSTRAINT cliente_solicita_mantenimiento_id_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente);
 ALTER TABLE cliente_solicita_mantenimiento ADD CONSTRAINT cliente_solicita_mantenimiento_id_mantenimiento FOREIGN KEY (id_mantenimiento) REFERENCES mantenimiento (id_mantenimiento);
 ALTER TABLE pluma_mantenimiento ADD CONSTRAINT pluma_mantenimiento_id_mantenimiento FOREIGN KEY (id_mantenimiento) REFERENCES mantenimiento (id_mantenimiento);
+ALTER TABLE pluma_venta ADD CONSTRAINT pluma_venta_id_venta FOREIGN KEY (id_venta) REFERENCES venta (id_venta);
+ALTER TABLE pluma_venta ADD CONSTRAINT pluma_venta_id_pluma FOREIGN KEY (id_pluma) REFERENCES pluma (id_pluma);
