@@ -63,31 +63,19 @@
             <i class="material-icons opacity-10">person</i>
           </div>
         
-        <span class="nav-link-text ms-1">x</span>
+        <span class="nav-link-text ms-1">Cuenta</span>
       </a>
     </li>
 
 
     <li class="nav-item">
-      <a class="nav-link text-white " href="../../../material-dashboard-master/pages/sign-in.html">
-        
+    <a class="nav-link text-white " href="../../privado/sesion/sign-in.php" value="5">
+       
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">login</i>
           </div>
         
-        <span class="nav-link-text ms-1">x</span>
-      </a>
-    </li>
-
-
-    <li class="nav-item mb-3">
-      <a class="nav-link text-white " href="./sign-up.html">
-        
-          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="material-icons opacity-10">assignment</i>
-          </div>
-        
-        <span class="nav-link-text ms-1">Log out</span>
+        <span class="nav-link-text ms-1">Cerrar sesión</span>
       </a>
     </li>
 

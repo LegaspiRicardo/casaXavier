@@ -31,7 +31,7 @@ $("#exampleModal7").modal('show');
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-                               
+
         <div class="modal-body">
             <form class="needs-validation" novalidate action="../../../../back-end/controladores/empleado_controlador.php" method="POST" enctype="multipart/form-data" >
 
@@ -86,7 +86,7 @@ $("#exampleModal7").modal('show');
           </div>
         </div>
 
-       <br>
+      <br>
         <!------------------------------------Puesto------------------------------------------>
         <div class="Subtitulo ">
           <h4 >Puesto</h4>
