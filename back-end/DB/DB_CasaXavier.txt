@@ -26,6 +26,7 @@ apellido_pat VARCHAR(60) NOT NULL,
 apellido_mat VARCHAR(60) NOT NULL,
 telefono VARCHAR(60) NOT NULL,
 correo VARCHAR(60) NOT NULL,
+contrasena VARCHAR(60) NOT NULL,
 cargo VARCHAR(60) NOT NULL);
 
 CREATE TABLE venta (
