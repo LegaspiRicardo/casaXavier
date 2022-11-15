@@ -40,6 +40,8 @@
 
       <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!--   Icono casa Xavier en la pestaña-->
+  <link rel="icon" type="image/x-icon" href="../../plumaFavicon.ico">
   <!-- Nucleo Icons -->
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -77,7 +79,7 @@
 
 <div class=" col-12 mb-4 mx-auto">
    <h2 class="col-7 mx-auto text-left font-weight-bolder mt-2">Plumas existentes</h2>
-
+   <p class="col-7 mx-auto">Usuario: Administrador </p>
   <div class="row">
     <?php
       include_once ('crear.php');

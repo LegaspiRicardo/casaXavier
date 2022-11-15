@@ -76,21 +76,21 @@ $("#exampleModal1").modal('show');
         <h4 >Contacto</h4>
         </div>
         <div class="form-row"> 
-          <div class="col">
+          <div class="col-6">
             <input type="text" class="form-control inputForm" id="validationCustom01" name="telefono" required>
             <label for="validationCustom01">Telefono</label>
           </div>
 
-          <div class="col">
+          <div class="col-6">
             <input type="text" class="form-control inputForm" id="validationCustom02" name="correo" required>
             <label for="validationCustom02">Correo</label>
           </div>
         </div>
 
-       <br>
+        <br>
         <!------------------------------------Puesto------------------------------------------>
         <div class="Subtitulo ">
-          <h4 >Puesto</h4>
+          <h4 >Equipo</h4>
         </div>
         <div class="form-row"> 
           <div class="col styled-select black rounded ">
@@ -99,9 +99,19 @@ $("#exampleModal1").modal('show');
                     <option value="Ventas" >Ventas</option>
                     <option value=" " selected hidden> </option>
                 </select>
+                <label for="validationCustom09">Puesto</label>
+          </div>
+
+
+          
+          <div class="col">
+            <input type="password" class="form-control inputForm text-center" id="validationCustom02" name="contrasena" placeholder="Contraseña" required>
+            <label for="validationCustom02">Exclusiva para acceso al sistema</label>
           </div>
           
         </div>
+
+        
 <br>
   
       <!------------------------------------Modal footer------------------------------------------>

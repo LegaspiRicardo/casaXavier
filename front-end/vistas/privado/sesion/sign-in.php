@@ -33,7 +33,8 @@
 
     </style>
 
-    
+    <!--   Icono casa Xavier en la pestaña-->
+    <link rel="icon" type="image/x-icon" href="../../plumaFavicon.ico">
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 

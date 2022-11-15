@@ -24,7 +24,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="apple-touch-icon" sizes="76x76" href="../../../material-dashboard-master/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../../../material-dashboard-master/assets/img/favicon.png">
 
   <!-- Custom styles for this template -->
 
@@ -41,6 +40,9 @@
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  
+  <!--   Icono casa Xavier en la pestaña-->
+  <link rel="icon" type="image/x-icon" href="../../plumaFavicon.ico">
 
   <!-- Nucleo Icons -->
   <link href="../../../material-dashboard-master/assets/css/nucleo-icons.css" rel="stylesheet" />
