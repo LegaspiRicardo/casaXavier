@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="apple-touch-icon" sizes="76x76" href="../../../material-dashboard-master/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../../../material-dashboard-master/assets/img/favicon.png">
-
+  <!--   Icono casa Xavier en la pestaña-->
+  <link rel="icon" type="image/x-icon" href="../../plumaFavicon.ico">
   <!-- Custom styles for this template -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
