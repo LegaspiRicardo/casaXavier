@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if(!isset($_SESSION['correo'])){
+  header('Location: ../sesion/sign-in.php');
+                   
+}
   include_once '../../../../back-end/modelos/empleado.php';
   
 

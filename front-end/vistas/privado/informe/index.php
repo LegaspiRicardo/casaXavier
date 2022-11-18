@@ -1,11 +1,9 @@
 <?php
-  session_start();
-  if(!isset($_SESSION['correo'])){
-  header('Location: ../sesion/sign-in.php');              
-  }
-  include_once '../../../../back-end/modelos/pluma.php';
-  
-
+    session_start();
+    if(!isset($_SESSION['correo'])){
+    header('Location: ../sesion/sign-in.php');              
+    } 
+    include_once '../../../../back-end/modelos/informes.php';
 ?>
 
 <!doctype html>
@@ -16,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Inventario</title>
+    <title>Prospectos casa Xavier</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
@@ -81,32 +79,17 @@
 
 
 <div class=" col-12 mb-4 mx-auto">
-   <h2 class="col-7 mx-auto text-left font-weight-bolder mt-2">Plumas existentes</h2>
+   <h2 class="col-7 mx-auto text-left font-weight-bolder mt-2">Buzón de clientes</h2>
    <p class="col-7 mx-auto">Usuario: Administrador </p>
-  <div class="row">
-    <?php
-      include_once ('crear.php');
-    ?>
-  </div>
-
 
 
   <div class="col-8 mx-auto mt-5">
     <?php  
       include_once('data.php'); 
-      include_once('actualizar.php');
-      include_once('borrar.php');
     ?>
   </div>
 
 
-  <h2 class="col-2 mx-auto text-left font-weight-bolder mt-5 pt-5">Plumas agotadas</h2>
-
-  <div class="col-4 mx-auto mt-3 mb-5 pb-3">
-    <?php  
-      include_once('data-agotado.php'); 
-    ?>
-  </div>
       
   <div class="col-10 ml-auto">
   <?php

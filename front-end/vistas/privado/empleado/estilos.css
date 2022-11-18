@@ -25,3 +25,12 @@ h2{
 .btn{
     text-transform:initial;
 }
+
+.mini-aviso{
+    font-size:12px;
+    opacity: 0.5;
+}
+
+.mini-aviso:hover{
+    color: blue;
+}

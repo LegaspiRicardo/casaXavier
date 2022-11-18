@@ -99,13 +99,19 @@ $("#exampleModal7").modal('show');
                     <option value="<?php echo $empleado->cargo?>" selected> <?php echo $empleado->cargo?> </option>
                 </select>
           </div>
+
+          <div class="col">
+            <input type="password" class="form-control inputForm text-center" id="validationCustom02" name="contrasena" value="<?php echo $empleado->correo?>" disabled>
+            <label class="mb-0" for="validationCustom02">Contraseña protegida</label>
+            <p class="mini-aviso">Para cambiarla contacte a soporte</p>
+          </div>
           
         </div>
 <br>
   
       <!------------------------------------Modal footer------------------------------------------>
       <div class="modal-footer">
-        <input type="submit" class=" col-8 btn btn-primary shadow mx-auto text-white" value="Registrar empleado">
+        <input type="submit" class=" col-8 btn btn-primary shadow mx-auto text-white" value="Actualizar empleado">
         <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Cerrar</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
