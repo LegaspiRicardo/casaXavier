@@ -67,6 +67,13 @@ marca VARCHAR(60) NOT NULL,
 precio VARCHAR(60) NOT NULL,
 cantidad INT);
 
+CREATE TABLE informes (
+  id_informe INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  correo varchar(60) NOT NULL,
+  telefono varchar(60) NOT NULL,
+  mensaje varchar(255) NOT NULL,
+  estatus varchar(60)
+);
 
 
 ALTER TABLE empleado_genera_venta ADD CONSTRAINT empleado_genera_venta_id_empleado FOREIGN KEY (id_empleado) REFERENCES empleado(id_empleado);

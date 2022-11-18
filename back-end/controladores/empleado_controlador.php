@@ -1,4 +1,5 @@
 <?php
+    session_start()  ;
     //Se incluye el modelo
     include_once '../modelos/empleado.php';
 
@@ -32,6 +33,8 @@
                 $empleado->id_empleado=$_REQUEST['id_empleado'];
                 $resultado='';
                 echo $empleado->actualizar();
+                header('Location: ../../front-end/vistas/privado/empleado/index.php?resultado='.$resultado);
+                exit();
             break; 
 
             case '3':                                      //Eliminar Empleado
@@ -42,34 +45,48 @@
             break;
             default: echo"opcion invalida";
 
-            case '4':                                          //Log in
+
+
+            case '4':                                        //Log in
                 $empleado=new Empleado();
                 $empleado->correo=$_REQUEST['correo'];
                 $empleado->contrasena=$_REQUEST['contrasena'];
                 $empleado->cargo=$_REQUEST['cargo'];
                 $usuario=$empleado->inicio_sesion();
-                //Si esta registrado y si cumple con el cargo correspondiente accederá
-                if($usuario->cargo=$_REQUEST['cargo'] == $usuario->cargo="Admin")
-                {
-                    $_SESSION['correo']=$usuario->correo;
-                    $_SESSION['contrasena']=$usuario->contrasena;
-                    $_SESSION['cargo']=$usuario->cargo;
-                    header('Location: ../../front-end/vistas/privado/panel-control/home.php?');
-                    exit();
+
+                if($usuario!=null){
+
+                    //Si esta registrado y si cumple con el cargo correspondiente accederá
+                    if($usuario->cargo=$_REQUEST['cargo'] == $usuario->cargo="Admin")
+                    {
+                        $_SESSION['correo']=$usuario->correo;
+                        $_SESSION['contrasena']=$usuario->contrasena;
+                        $_SESSION['cargo']=$usuario->cargo;
+                        header('Location: ../../front-end/vistas/privado/panel-control/home.php?');
+                        exit();
+                    }
+                    if($usuario->cargo=$_REQUEST['cargo'] == $usuario->cargo="Ventas"||"Tecnico" )
+                    {
+                        $_SESSION['correo']=$usuario->correo;
+                        $_SESSION['contrasena']=$usuario->contrasena;
+                        $_SESSION['cargo']=$usuario->cargo;
+                        header('Location: ../../front-end/vistas/publico/panel-control/home.php?');
+                        exit();
+                    }
+                    else
+                    {
+                        session_unset();
+                        session_destroy();
+                        $resultado="usuario y/o contraseña no validos";
+                        header('Location: ../../front-end/vistas/privado/sesion/sign-in.php?resultado='.$resultado);
+                        exit();
+                    }
                 }
-                if($usuario->cargo=$_REQUEST['cargo'] == $usuario->cargo="Ventas"||"Tecnico" )
-                {
-                    $_SESSION['correo']=$usuario->correo;
-                    $_SESSION['contrasena']=$usuario->contrasena;
-                    $_SESSION['cargo']=$usuario->cargo;
-                    header('Location: ../../front-end/vistas/publico/panel-control/home.php?');
-                    exit();
-                }
-                else
-                {
+
+                else{
                     session_unset();
                     session_destroy();
-                    $resultado="usuario y/o contraseña no validos";
+                    $resultado="Usuario y/o contraseña no validos";
                     header('Location: ../../front-end/vistas/privado/sesion/sign-in.php?resultado='.$resultado);
                     exit();
                 }
