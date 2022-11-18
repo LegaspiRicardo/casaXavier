@@ -129,6 +129,46 @@ class Informe implements CRUD
             }  
     }
 
+    function leer_pendiente()
+    {
+        try{
+            $c=new Conexion();
+            $conn=$c->getConection();
+
+            $stmt = $conn->prepare("
+            SELECT * FROM `informes` WHERE estatus = 'Pendiente'");
+            $stmt->setFetchMode(PDO::FETCH_OBJ);
+            $stmt->execute();
+            $result=$stmt->fetchAll();
+            return $result;
+
+            } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            } finally{
+            $conn = null;
+            }  
+    }
+
+    function leer_contactado()
+    {
+        try{
+            $c=new Conexion();
+            $conn=$c->getConection();
+
+            $stmt = $conn->prepare("
+            SELECT * FROM `informes` WHERE estatus = 'Contactado'");
+            $stmt->setFetchMode(PDO::FETCH_OBJ);
+            $stmt->execute();
+            $result=$stmt->fetchAll();
+            return $result;
+
+            } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            } finally{
+            $conn = null;
+            }  
+    }
+
 }
 
 ?>
