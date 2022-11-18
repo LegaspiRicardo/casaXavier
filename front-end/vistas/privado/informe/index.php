@@ -84,13 +84,35 @@
 
 
   <div class="col-8 mx-auto mt-5">
+    <h4>Clientes esperando respuesta</h4>
     <?php  
       include_once('data.php'); 
+      include('actualizar.php'); 
+      include('contactado.php'); 
     ?>
   </div>
 
+<br>
+<br>
+<br>
 
-      
+  <div class="col-4 mx-auto mt-5">
+    <h4>Clientes contactados</h4>
+    <?php  
+      include_once('data-confirmado.php');  
+      include('actualizar.php'); 
+      include('contactado.php'); 
+    ?>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
   <div class="col-10 ml-auto">
   <?php
     include_once ('../panel-control/footer.php');

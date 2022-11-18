@@ -6,7 +6,7 @@ if(isset($_GET['resultado'])){
 }  
 
     $informe=new Informe();
-    if(isset($_GET['id_informe']) && isset($_GET['editar'])){
+    if(isset($_GET['id_informe']) && isset($_GET['contactado'])){
     $informe->id_informe=$_GET['id_informe'];
     $informe=$informe->leer_id();
     
@@ -21,17 +21,17 @@ if(isset($_GET['resultado'])){
 
 <script>
 $(document).ready(function(){
-$("#exampleModal13").modal('show');
+$("#exampleModal14").modal('show');
 });
 </script>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
         <div class="modal-header">
-            <h3 class="modal-title mx-auto" id="exampleModalLabel">Modificar </h3>
+            <h3 class="modal-title mx-auto" id="exampleModalLabel">Contactado </h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -50,22 +50,15 @@ $("#exampleModal13").modal('show');
         <input type="text" name="telefono" class="col-12 form-control" value="<?php echo $informe->telefono?>">
         
         <label for="mensaje" class="col-12 mb-0 mt-2">Mensaje:</label>
-        <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-control mb-3" value="<?php echo $informe->mensaje?>"> <?php echo "$informe->mensaje"?> </textarea>
+        <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-control mb-2" value="<?php echo $informe->mensaje?>"><?php echo "$informe->mensaje"?> </textarea>
 
         <label for="estatus" class="col-6 mb-0 mt-2 text-center">Estatus:</label>
-
-        <select name="estatus" class="form-control col-8 mx-auto text-center mb-3" value="<?php echo $informe->estatus?>">
-          <option value="<?php echo $informe->estatus?>" selected hidden> <?php echo $informe->estatus?>        </option>
-          <option value="Pendiente" >Pendiente</option>
-          <option value="Contactado" >Contactado</option>
-        </select>
-
-
-
-
+            <select name="estatus" class="form-control col-8 mx-auto text-center mb-3 bg-success texto-blanco" >
+                <option value="Contactado" class="texto-blanco">Contactado</option>
+            </select>
 
         <div class="modal-footer">
-            <input type="submit" class=" col-8 btn btn-info mx-auto" value="Actualizar ">
+            <input type="submit" class=" col-8 btn btn-info mx-auto" value="Confirmar ">
             <button type="button" class="btn bg-secondary text-white" data-dismiss="modal">Cerrar</button>
             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>

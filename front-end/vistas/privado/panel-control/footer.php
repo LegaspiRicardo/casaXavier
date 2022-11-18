@@ -1,5 +1,5 @@
 
-    <footer class="footer py-4 bg-gray-100">
+    <footer class="footer py-3 bg-gray-100 col-12">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-lg-between ">
 

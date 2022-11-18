@@ -5,14 +5,14 @@
         echo $_GET['resultado'];
     }
     $informe=new Informe();
-    $informes=$informe->leer_pendiente();
+    $informes=$informe->leer_contactado();
    
     ?>
 
 <style>
 
 .table{
-        width:90%;
+        width:30%;
         max-height:150px;
         overflow: scroll;
         border-collapse:collapse;
@@ -81,7 +81,6 @@ th{
       <th scope="col">Telefono</th>
       <th scope="col">Mensaje</th>
       <th scope="col">Estatus</th>
-      <th scope="col"> </th>
     </tr>
   </thead>
   <tbody>
@@ -94,8 +93,7 @@ th{
       <td><?php echo $informe->correo ?></td>
       <td><?php echo $informe->telefono ?></td>
       <td><?php echo $informe->mensaje ?></td>
-      <td><?php echo $informe->estatus ?></td>
-      <td><a href="index.php?id_informe=<?php echo $informe->id_informe ?>&contactado" class="contactar">confirm  </a></td>
+      <td class="text-success"><?php echo $informe->estatus ?></td>
   </tr>
   
   <?php 
