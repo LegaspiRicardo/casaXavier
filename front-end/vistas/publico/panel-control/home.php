@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['correo'])){
+  header('Location: ../../privado/sesion/sign-in.php');
+                   
+}
   include_once '../../../../back-end/modelos/pluma.php';
 ?>
 
