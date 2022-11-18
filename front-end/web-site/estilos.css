@@ -49,6 +49,12 @@ h3{
     border-bottom: solid #8b845dba  ;
 }
 
+h4{
+    font-family: Great Vibes;
+    text-align: center;
+    font-size:40px ;
+}
+
 p{
     font-size: 35px;
     text-align: center;
@@ -65,7 +71,7 @@ p{
 .navbar-titulo{
     font-family: Tamara;
     color: #EBCF33;
-    font-size: 55px;
+    font-size: 75px;
 }
 
 .nav-link{
@@ -178,6 +184,21 @@ footer{
 .texto-amarillo:hover{
     color: #EBCF33 ;
 }
+
+.link-app{
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+    background-color: #ccb63c;
+    padding: 1%;
+    border-radius: 8%;
+}
+
+.link-app:hover{
+    color: black;
+}
+
+
+
 @media only screen and (max-width:500px){
 
 .navbar-titulo{

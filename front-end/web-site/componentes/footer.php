@@ -21,6 +21,7 @@
           <p class="mb-0">32 32 42 23 42</p>
           <p class="mb-0">32 32 42 23 42</p>
           <p>casaXavier@gmail.com</p>
+          <p><a href="../vistas/privado/sesion/sign-in.php" class="link-app">Equipo casa Xavier</p></a>
         </div>
       </div>
     </footer>

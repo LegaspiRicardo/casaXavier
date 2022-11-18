@@ -1,9 +1,16 @@
+<?php
+  include_once '../../back-end/modelos/informes.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--   Icono casa Xavier en la pestaña-->
+    <link rel="icon" type="image/x-icon" href="../vistas/plumaFavicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
@@ -43,15 +50,15 @@
         </div>
   
         <div class="col-6  mx-auto mt-5">
-          <a href="productos.php" class="texto-amarillo"><h2 class="col-8 mx-auto mt-5 ">Plumas fuente y estilografos</h2></a>
-          <p class="col-8 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
+          <a href="productos.php" class="texto-amarillo"><h2 class="col-8 mx-auto mt-5 ">Plumas fuente y estilógrafos</h2></a>
+          <p class="col-8 mx-auto">Extensa variedad de estilógrafos y plumas fuente</p>
         </div>
       </div>
 
       <div class="row pt-3">
           <div class="col-6  mx-auto mt-5">
             <a href="servicios.php" class="texto-amarillo "><h2 class="col-8 mx-auto mt-5">Reparación y mantenimiento</h2></a>
-            <p class="col-8 mx-auto">Piezas originales para tus plumas y estilografos</p>
+            <p class="col-8 mx-auto">Piezas originales para tus plumas y estilógrafos</p>
           </div>
 
           <div class="col-6 mx-auto">
@@ -67,8 +74,8 @@
         </div>
   
         <div class="col-12  mx-auto  mb-3">
-          <h2 class="col-12 mx-auto mt-2">Plumas fuente y estilografos</h2>
-          <p class="col-12 mx-auto">Extensa variedad de estilografos y plumas fuente</p>
+          <h2 class="col-12 mx-auto mt-2">Plumas fuente y estilógrafos</h2>
+          <p class="col-12 mx-auto">Extensa variedad de estilógrafos y plumas fuente</p>
         </div>
       </div>
 
@@ -79,7 +86,7 @@
         </div>
           <div class="col-12  mx-auto ">
             <a href="productos.php" class="texto-amarillo"><h2 class="col-12 mx-auto mt-2">Reparación y mantenimiento</h2></a>
-            <p class="col-12 mx-auto">Piezas originales para tus plumas y estilografos</p>
+            <p class="col-12 mx-auto">Piezas originales para tus plumas y estilógrafos</p>
           </div>
 
       </div>
@@ -92,7 +99,9 @@
       <div class="col-12 pb-5">
         <div class="col-4 mt-5 pt-5 ml-auto">
           <div class="col-12 ml-auto text-center ">
-            <h3 class=" pt-5 mt-5 ">Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto. Es un hábito.</h3>
+            <h4 class=" pt-5 mt-5 ">Somos lo que hacemos repetidamente.</h4>
+              <h4>La excelencia, entonces, no es un acto.</h4>  
+              <h3> Es un hábito.</h3>
             <p class="text-faded">-Aristoteles-</p>
           </div>
         </div>
@@ -165,20 +174,11 @@
         <img src="imagenes/senor.jpg" class="row mx-auto imagen-contacto" alt="">
       </div>
       <div class="col-8 d-inline mx-auto">
-        <h2 class="borde-solido-amarillo col-10 mx-auto">Contactanos  </h2>
-        <div class="col-8 mx-auto pt-2">
-          <form method="POST" class="col-10 formulario">
-                <label for="correo" class="col-12 mb-0 mt-2">Correo:</label>
-                <input type="mail" name="correo" class="col-10 form-input">
-    
-                <label for="telefono" class="col-12 mb-0 mt-2">Telefono:</label>
-                <input type="text" name="telefono" class="col-10 form-input ">
-    
-                <label for="mensaje" class="col-12 mb-0 mt-2">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-10 form-input"></textarea>
-    
-                <input type="submit" value="Enviar" class="col-3 mt-3 form-btn ">
-          </form>
+        <h2 class="borde-solido-amarillo col-10 mx-auto">Contáctanos  </h2>
+        <div class="col-6 mx-auto pt-2">
+        <?php
+          include ('componentes/contacto-form.php')
+          ?>
         </div>
       </div>
     </div>
@@ -187,20 +187,13 @@
       <img src="imagenes/senor.jpg" class="col-7 mx-auto imagen-contacto" alt="">
       <div class="col-10 mx-auto">
         <div class="contacto ">
-          <h2 class="pt-3 mb-0">Contactanos  </h2>
+          <h2 class="pt-3 mb-0">Contáctanos  </h2>
           <div class="col-12 mx-auto pt-2 ">
-            <form method="POST" class="formulario mx-auto">
-                <label for="correo" class="col-12 mb-0 mt-2">Correo:</label>
-                <input type="mail" name="correo" class="col-12 form-input">
-    
-                <label for="telefono" class="col-12 mb-0 mt-2">Telefono:</label>
-                <input type="text" name="telefono" class="col-12 form-input">
-    
-                <label for="mensaje" class="col-12 mb-0 mt-2">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-input"></textarea>
-    
-                <input type="submit" value="Enviar" class="col-3 mt-3 form-btn ">
-            </form>
+          
+          <?php
+          include ('componentes/contacto-form.php')
+          ?>
+
           </div>
         </div> 
       </div>
