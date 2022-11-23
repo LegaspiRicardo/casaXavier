@@ -1,5 +1,5 @@
 Ingresar 5 empleados
-INSERT INTO `empleado` (`id_empleado`, `nombres`, `apellido_pat`, `apellido_mat`, `telefono`, `correo`, `contrasena` , `cargo`) VALUES ('1', 'Juan', 'perez', 'lopez', '11111', 'juan@gmail.com', 'Juan1', 'Ventas'), ('2', 'Pedro', 'moreno', 'casas', '2222', 'pedro@gmail.com', 'Pedro2', 'Admin'), ('3', 'Federuci', 'Lopez', 'Mendez', '3333', 'f@ghmail.com', 'Federuci3', 'Tecnico'), ('4', 'Lucia', 'Campos', 'Ascencio', '44444', 'luci@gmail.com', 'Lucia4', 'Ventas'), ('5', 'Ximena', 'Salazar', 'Mora', '5555', 'x@gmail.com', 'Ximena5', 'Tecnico');
+INSERT INTO `empleado` (`id_empleado`, `nombres`, `apellido_pat`, `apellido_mat`, `telefono`, `correo`, `contrasena` , `cargo`) VALUES ('1', 'David', 'Zepeda', 'Lopez', '33 2548 4868', 'david@gmail.com', 'david1', 'Ventas'), ('2', 'Rene', 'Elena', 'Lopez', '33 5848 5487', 'rene@gmail.com', 'rene1', 'Ventas'), ('3', 'Moises', 'Amador', 'Mendez', '33 ', 'moises@gmail.com', 'moises1', 'Tecnico'), ('4', 'Ricardo', 'Legaspi', 'Lopez', '33 5487 4854', 'ricardo@gmail.com', 'ricardo1', 'Ventas'), ('5', 'Admin', 'user', 'user', '33 5987 4154', 'admin@gmail.com', 'admin123', 'Admin');
 
 
 Ingresar 15 plumas
