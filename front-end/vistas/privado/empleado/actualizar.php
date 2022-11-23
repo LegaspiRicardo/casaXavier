@@ -101,7 +101,7 @@ $("#exampleModal7").modal('show');
           </div>
 
           <div class="col">
-            <input type="password" class="form-control inputForm text-center" id="validationCustom02" name="contrasena" value="<?php echo $empleado->correo?>" disabled>
+            <input type="password" class="form-control inputForm text-center" id="validationCustom02" name="contrasena" value="<?php echo $empleado->contrasena?>" disabled>
             <label class="mb-0" for="validationCustom02">Contraseña protegida</label>
             <p class="mini-aviso">Para cambiarla contacte a soporte</p>
           </div>

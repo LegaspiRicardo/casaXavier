@@ -56,7 +56,6 @@ th{
       <th scope="col">Modelo</th>
       <th scope="col">Marca</th>
       <th scope="col">Precio</th>
-      <th scope="col">Estatus</th>
     </tr>
   </thead>
   <tbody>
@@ -68,8 +67,7 @@ th{
       <td><?php echo $pluma->id_pluma ?></td>
       <td><?php echo $pluma->modelo ?></td>
       <td><?php echo $pluma->marca ?></td>
-      <td><?php echo $pluma->precio ?></td>
-      <td><?php echo $pluma->estatus ?></td>
+      <td>$ <?php echo $pluma->precio ?></td>
   </tr>
   
   <?php 

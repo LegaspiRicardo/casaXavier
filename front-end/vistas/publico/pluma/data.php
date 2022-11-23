@@ -75,7 +75,6 @@ th{
       <th scope="col">Precio</th>
       <th scope="col">Estatus</th>
       <th scope="col"> </th>
-      <th scope="col"> </th>
     </tr>
   </thead>
   <tbody>
@@ -91,7 +90,6 @@ th{
       <td><?php echo $pluma->precio ?></td>
       <td><?php echo $pluma->estatus ?></td>
       <td> <a href="index.php?id_pluma=<?php echo $pluma->id_pluma ?>&editar" class="edit">edit  </a></td>
-      <td> <a href="index.php?id_pluma=<?php echo $pluma->id_pluma ?>&borrar" class="erase"> x  </a></td>
   </tr>
   
   <?php 
