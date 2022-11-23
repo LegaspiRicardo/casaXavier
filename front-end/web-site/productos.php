@@ -35,7 +35,9 @@
                 <img src="imagenes/pluma2.1.jpg" class="imagenes-productos col-12 mx-auto" alt="">
             </div>
             <div class="col-5 mx-auto mt-4">
-                <p class="texto-alineado-vertical">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores, rem, distinctio tempore, consequatur accusantium rerum velit eveniet error aliquam repudiandae perferendis voluptate dolore corporis eius accusamus placeat reiciendis totam?</p>
+                <p class="texto-alineado-vertical">Instrumentos de dibujo técnico y escritora que contienen un depósito de tinta líquida.
+                   <br> Sus inicios remontan al siglo X. Originarias de París.
+                </p>
 
             </div>
         </div>
@@ -47,7 +49,8 @@
                 <img src="imagenes/plumas2.jpg" class="imagenes-productos col-12 mx-auto" alt="">
             </div>
             <div class="col-5 mx-auto mt-4">
-                <p class="texto-alineado-vertical">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores, rem, distinctio tempore, consequatur accusantium rerum velit eveniet error aliquam repudiandae perferendis voluptate dolore corporis eius accusamus placeat reiciendis totam?</p>
+                <p class="texto-alineado-vertical">Considerados como de las mejores herramientas para escribir o dibujar.
+                    <br>  Contamos con distintas marcas y modelos.  </p>
 
             </div>
         </div>
@@ -71,7 +74,7 @@
                 <img src="imagenes/pluma5.jpg" class="imagenes-productos col-12 mx-auto" alt="">
             </div>
             <div class="col-5 mx-auto mt-4">
-                <p class="texto-alineado-vertical">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores, rem, distinctio tempore, consequatur accusantium rerum velit eveniet error aliquam repudiandae perferendis voluptate dolore corporis eius accusamus placeat reiciendis totam?</p>
+                <p class="texto-alineado-vertical">Modelos exclusivos, plumas de colección, piezas especiales.</p>
 
             </div>
         </div>

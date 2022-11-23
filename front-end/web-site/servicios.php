@@ -34,17 +34,17 @@
 
                 <div class="col-4 mx-auto texto-servicios">
                     <h3 class="col-12 mx-auto">Repara tu pluma fuente con nosotros.</h3>
-                    <p class="col-12 mx-auto">Contamos con piezas originales y personal capacitado.</p>
+                    <p class="col-12 mx-auto texto-40">Contamos con piezas originales y personal capacitado.</p>
                 </div>
             </div>
 
             <div class="row mt-5">
                 <div class="col-6 ml-auto texto-servicios">
                 
-                    <h3 class="col-12 mx-auto mb-4">Ofrecemos servicios de:</h3>
-                    <p class="col-12 mx-auto mb-0">-Limpieza</p>
-                    <p class="col-12 mx-auto mb-0">-Cambio de piezas</p>
-                    <p class="col-12 mx-auto mb-0">-Mantenimiento preventivo</p>
+                    <h3 class="col-12 mx-auto mb-4 texto-40">Ofrecemos servicios de:</h3>
+                    <p class="col-12 mx-auto mb-0 texto-40">-Limpieza</p>
+                    <p class="col-12 mx-auto mb-0 texto-40">-Cambio de piezas</p>
+                    <p class="col-12 mx-auto mb-0 texto-40">-Mantenimiento preventivo</p>
                 </div>
                 <div class="col-5 ml-auto">
                     <img src="imagenes/trabajadores.png" class="col-10  " alt="">
@@ -58,7 +58,7 @@
 
                 <div class="col-4 mx-auto texto-servicios">
                     <h3 class="col-12 mx-auto">Más de 35 años de trayectoria</h3>
-                    <p class="col-12 mx-auto">Reflejan la excelente calidad de nuestro trabajo</p>
+                    <p class="col-12 mx-auto texto-40">Reflejan la excelente calidad de nuestro trabajo</p>
                 </div>
 
             </div>
